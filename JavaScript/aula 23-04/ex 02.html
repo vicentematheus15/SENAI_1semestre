@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let valorCompra = prompt("Digite o valor da compra: R$")
+        let valorFinal 
+
+        if(valorCompra > 200){
+            valorFinal = valorCompra - (valorCompra * 0.15)
+            alert("Essa compra possui 15% de desconto.\nO valor final é igual a R$" + valorFinal)
+        } else if (valorCompra < 100){
+            alert("Essa compra não possui desconto.\nO valor final é igual a R$" + valorCompra)
+        } else{
+            valorFinal = valorCompra - (valorCompra * 0.10)
+            alert("Essa compra possui 10% de desconto.\nO valor final é igual a R$" + valorFinal)
+        }
+    </script>
+</body>
+</html>

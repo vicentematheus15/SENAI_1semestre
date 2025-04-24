@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let lista = ["arroz", "batata", "leite", "tomate", "sabão em pó"];
+        console.log("O primeiro item da lista é " + lista[0]);
+        console.log("O segundo item da lista é " + lista[1]);
+        console.log(lista);
+
+        lista[0] = "feijão";// substitui por algum item da lista (arroz por feijão nesse caso)
+        console.log("O primeiro item foi substiruido por " + lista[0]);
+        console.log(lista);
+
+
+        lista.push("Pasta dental");//adiciona no final da lista (pasta dental é o último item agora)
+        console.log("O item foi adicionado " + lista[5])
+        console.log(lista);
+
+
+        lista.unshift("Maçã");//insere o no início da lista (Maçã é o primeiro item a lista agora)
+        console.log("O item foi adicionado ao início da lista " + lista[0])
+        console.log(lista)
+
+
+        lista.pop();//remove o último item da lista (Pasta dental foi removida)
+        console.log("Pasta dental removida")
+        console.log(lista)
+
+        lista.shift(); //remove o primeiro item da lista (Maçã foi removida)
+        console.log("Maçã removida")
+        console.log(lista)
+        
+        //mostra o tamanho da lista --> "lista.lenght" 
+        console.log("A lista tem " + lista.length + " itens") ;
+
+    </script>
+</body>
+</html>
