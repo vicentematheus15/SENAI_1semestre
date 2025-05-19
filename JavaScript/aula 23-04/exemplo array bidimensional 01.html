@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let notas = [
+        [7.5, 8.0, 6.0], //aluno 1: nota em 3 disciplinas
+        [9.0, 8.5, 7.0], //aluno 2
+        [6.5, 7.0, 8.0]  //aluno 3
+        ];
+
+        //Mostrar todas as notas no console
+        for(let i = 0; i < notas.length; i++){
+            console.log("Notas do aluno " + (i+1) + ": " + notas[i].join(", "));
+        } 
+        
+        //notas[0][1] acessa a segunda nota do primeiro aluno (8.0).
+        //O join(", ") junta as notas de cada aluno com vírgula, para uma exibição mais limpa no console
+        
+
+    </script>
+</body>
+</html>
