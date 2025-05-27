@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //função dentro de função
+        //a função contado armazena os dados "nome, email e telefone"
+        let contato = { "nome":"Carlos",
+                        "email":"email@email.com",
+                        "telefone":"(31)98765-4321",
+        // a função "dizerOi", busca dentro do objeto "contato" o contato.nome (que nesse exemplo é Carlos) 
+                        "dizerOi":function(){alert('Oi, eu sou o '+contato.nome);} 
+        };
+        contato.dizerOi();
+        //chama a função dizerOi que buscou o dado que estava armazenado na posição "nome" do objeto "contato"
+    </script>
+</body>
+</html>

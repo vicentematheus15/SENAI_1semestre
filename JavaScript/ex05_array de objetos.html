@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //array de objeto: abre com colchetes[] e cada posição do array é separado com chaves{}
+            let agenda = [ { //todos os 3 primeiros dados são referentes ao peimeiro objeto (índice 0)
+                "nome":"Carlos",
+                "email":"carlos@email.com",
+                "telefone":"(31)98765-4321" 
+                },         
+                {//todos os dados na segunda abertura de chaves são referentes ao segundo objeto (índice 1)
+                "nome":"Dias",
+                "email":"dias@email.com",
+                "telefone":"(31)12345-6789" 
+                }
+            ]
+            console.log("O nome do objeto 1 é " + agenda[0].nome + " com email " + agenda[0].email);
+            console.log("O nome do objeto 2 é " + agenda[1].nome + " com email " + agenda[1].email);
+    </script>
+</body>
+</html>
