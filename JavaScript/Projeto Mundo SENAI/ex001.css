@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(89, 72, 247);
+}
+h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+#resistencia{
+    margin-left: 10px;
+}
+button{
+    margin-left: 100px ;
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    border-radius: 10%;
+    cursor: pointer;
+}
