@@ -1,5 +1,5 @@
 let pessoa = {
-    "primeiroNome":"Ana",
-    "sobrenome":"Silva"
-}
-console.log(pessoa["primeiroNome"])
+ "primeiro nome": "Ana",
+ "sobrenome": "Silva"
+};
+console.log(pessoa["primeiro nome"])
