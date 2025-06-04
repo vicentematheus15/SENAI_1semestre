@@ -1,0 +1,24 @@
+/* ESTRUTURA
+seletor{
+    propriedade: valor;
+    propriedade: valor;
+}
+
+TIPOS DE SELETORES
+p{
+    color:blue;
+}
+.minhaClasse{
+    color:blue;
+}
+#meuId{
+    color:blue
+
+}
+ORDEM DE "PRECEDENCIA" DOS TIPOS DE ALTERAÇÕES NO CSS
+INLINE > INTERNO > EXTERNO
+
+COMO FAZER:
+INLINE: <p style="color: red;">Este é um parágrafo com texto vermelho.<p>
+INTERNO: <style> p{ color: blue;}</style>
+EXTERNO: <link rel="stylesheet" href="style.css">
