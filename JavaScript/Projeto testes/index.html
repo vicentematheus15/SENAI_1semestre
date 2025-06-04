@@ -6,31 +6,38 @@
         <title>Document</title>
         <script src="script.js"></script>
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <h1>Calculo 1ª Lei de Ohm</h1>
+            <h1>Calculadora 1ª Lei de Ohm</h1>
             <hr>
-            <h2>Escolha o que deseja calcular</h2>
-            <br>
+            <h4>Calcule tensão, corrente ou resistência usando a 1ª Lei de Ohm</h4>
         </header>
-        <div>
-            <h3>Se deseja decobrir a corrente:</h3>
-            <br>
-            <label for="resistencia">Valor da resistência em ohms (Ω): </label>
-            <input  type="number" id="resistencia" placeholder="Digite o valor da resistência (Ω)">
-            <br><br>
-            <label for="tensao">Valor da tensão em volts (V): </label>
-            <input  type="number" id="tensao" placeholder="Digite o valor da tensão (V) ">
-            <br><br>
-            <label for="corrente">Valor da corrente em amperes (A) </label>
-            <input  type="number" id = "corrente" placeholder="Digite o valor da corrente (A)">
-            <br>
+        <div class="bloco">
+            <h3>Informe duas grandezas para calcular a terceira</h3>
+            <div class="valores">
+                <label for="resistencia"><strong>Valor da resistência: (R)</strong></label>
+                <input  type="number" id="resistencia" placeholder="Digite o valor da resistência">
+            </div>
+            <div class="valores">    
+                <label for="tensao"><strong>Valor da tensão: (V)</strong></label>
+                <input  type="number" id="tensao" placeholder="Digite o valor da tensão">
+            </div>    
+            <div class="valores">
+                <label for="corrente"><strong>Valor da corrente: (I)</strong></label>
+                <input  type="number" id = "corrente" placeholder="Digite o valor da corrente">
+            </div>
+                    
             <h3 id="resultado">Resultado: </h3>
-            <br>
-            <button id="bt1" onmouseout="voltaCorBt1()" onmouseenter="mudaCorBt1()" onclick="resultado()">Calcular</button>
-            <br><br>
-            <button id="bt2" onmouseout="voltaCorBt2()" onmouseenter="mudaCorBt2()" onclick="apagar()">Redefinir</button>
+            <div class="botoes">
+                <button id="bt1" onmouseout="voltaCorBt1()" onmouseenter="mudaCorBt1()" onclick="resultado()">Calcular</button>
+                <button id="bt2" onmouseout="voltaCorBt2()" onmouseenter="mudaCorBt2()" onclick="apagar()">Redefinir</button>
+            </div>
         </div>
+        
+        <div class="imagem"><h2><strong>Fórmulas</strong></h2><img src="formulas.png" id="img"></div>
     </body>
 </html>
