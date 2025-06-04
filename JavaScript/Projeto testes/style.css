@@ -1,10 +1,15 @@
 body{
-    background-color: rgb(167, 159, 238);
+    background-color: rgb(53, 70, 80);
 }
-h1{
+header{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     color: white;
+}
+div{
+    background-color: white;
+    width: 600px;
+    margin: auto;
 }
 #resistencia{
     margin-left: 10px;
@@ -16,4 +21,16 @@ button{
     font-weight: bold;
     border-radius: 10%;
     cursor: pointer;
+}
+
+#resistencia{
+    width: 250px;
+}
+
+#tensao{
+    width: 250px;
+}
+
+#corrente{
+    width: 250px;
 }
