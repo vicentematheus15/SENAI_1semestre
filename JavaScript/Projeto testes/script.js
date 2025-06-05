@@ -12,22 +12,41 @@ function resultado() {
     document.getElementById("resistencia").value == ""
   ) {
     alert("ERRO! Digite no mínimo dois valores para realizar o cálculo");
-  } else if (
+    return
+  }
+  
+  else if (
     document.getElementById("corrente").value == "" &&
     document.getElementById("tensao").value == ""
   ) {
     alert("ERRO! Digite no mínimo dois valores para realizar o cálculo");
-  } else if (
+    return
+  }
+  
+  else if (
     document.getElementById("corrente").value == "" &&
     document.getElementById("resistencia").value == ""
   ) {
     alert("ERRO! Digite no mínimo dois valores para realizar o cálculo");
-  } else if (
+    return  
+  } 
+
+  else if (
     document.getElementById("tensao").value == "" &&
     document.getElementById("resistencia").value == ""
   ) {
     alert("ERRO! Digite no mínimo dois valores para realizar o cálculo");
+    return
   }
+  
+  else if (
+    document.getElementById("corrente").value != "" &&
+    document.getElementById("tensao").value != "" &&
+    document.getElementById("resistencia").value != ""
+  ) {
+    alert("Digite apenas dois valores realizar o cálculo!");
+    return
+}
 
   //calculo corrente
   if (document.getElementById("corrente").value == "") {
@@ -53,16 +72,6 @@ function resultado() {
     document.getElementById("corrente").value = corrente;
   } 
   
-  //validacao
-  else if (
-    document.getElementById("corrente").value != "" &&
-    document.getElementById("tensao").value != "" &&
-    document.getElementById("resistencia").value != ""
-  ) {
-    alert("Digite apenas dois valores realizar o cálculo!");
-  } else {
-    alert("ERRO! Digite no mínimo dois valores para realizar o cálculo");
-  }
 }
 function apagar() {
   document.getElementById("resultado").innerHTML = "Resultado: ";
