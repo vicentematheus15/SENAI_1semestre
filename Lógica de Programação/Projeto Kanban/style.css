@@ -4,9 +4,10 @@
 } */
 
 header{
+    background-color: azure;
     grid-column: span 3;
     align-items: center;
-    padding: 20px;
+    padding: 0px 0px;
 }
 
 #container{
