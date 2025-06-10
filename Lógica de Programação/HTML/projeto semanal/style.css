@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#kanban{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    column-gap: 10px;
+    row-gap: 10px;    
+}
+
+#tituloColuna{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 30px;
+    text-align: center;
+}
+.tarefa{
+    background-color: aquamarine;
+}
+.nomeTarefa{
+    padding: 10px;
+    text-align: center;
+}
+
+.descricaoTarefa{
+    padding: 10px;
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
