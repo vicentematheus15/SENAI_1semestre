@@ -4,81 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main id="container">
-    
+    <!-- header com titulo e subtitulo da pagina -->
     <header>
         <h2 class="titulo">Bem vindo</h2>
         <h4 class="subtitulo">Sistema criado para gerenciamento de tarefa. Crie uma atividade clicando aqui</h4>
     </header>
-       
-    <div class="tituloColuna"><h4>A fazer</h4></div>
-        <div class="tituloColuna"><h4>Fazendo</h4></div>
-        <div class="tituloColuna"><h4>Pronto</h4></div>
 
-        <div class="tarefa">
-            <p class="nomeTarefa">Título</p>
-            <p class="descricaoTarefa">Descrição</p>
+    <!-- titulo de cada coluna -->
+    <div class="tituloColuna colunaFazer"><h4>Para fazer</h4></div>
+    <div class="tituloColuna colunaEmAndamento"><h4>Em andamento</h4></div>
+    <div class="tituloColuna colunaFeito"><h4>Feito</h4></div>
 
-            <div class="buttons">
-                <button>A fazer</button>
-                <button>Fazendo</button>
-                <button>Pronto</button>
-            </div>
-        </div>
-        <div class="tarefa">
-            <p class="nomeTarefa">Título</p>
-            <p class="descricaoTarefa">Descrição</p>
+
+        <!-- coluna fazer -->
+    <div class="coluna colunaFazer" id="tarefaParaFazer">
+        <p class="nomeTarefa">Título</p>
+        <p class="descricaoTarefa">Descrição</p>
 
             <div class="buttons">
-                <button>A fazer</button>
-                <button>Fazendo</button>
-                <button>Pronto</button>
+                <button>Para fazer</button>
+                <button>Em andamento</button>
+                <button>Feito</button>
             </div>
-        </div>
-        <div class="tarefa">
-            <p class="nomeTarefa">Título</p>
-            <p class="descricaoTarefa">Descrição</p>
+    </div>
+        
+        <!-- //coluna fazendo -->
+    <div class="coluna colunaEmAndamento" id="tarefaEmAndamento">
+        <p class="nomeTarefa">Título</p>
+        <p class="descricaoTarefa">Descrição</p>
 
             <div class="buttons">
-                <button>A fazer</button>
-                <button>Fazendo</button>
-                <button>Pronto</button>
+                <button>Para fazer</button>
+                <button>Em andamento</button>
+                <button>Feito</button>
             </div>
-        </div>
-        <div class="tarefa">
-            <p class="nomeTarefa">Título</p>
-            <p class="descricaoTarefa">Descrição</p>
+    </div>
+
+        <!-- coluna feito -->
+    <div class="coluna colunaFeito" id = tarefaFeito>
+        <p class="nomeTarefa">Título</p>
+        <p class="descricaoTarefa">Descrição</p>
 
             <div class="buttons">
-                <button>A fazer</button>
-                <button>Fazendo</button>
-                <button>Pronto</button>
+                <button>Para fazer</button>
+                <button>Em andamento</button>
+                <button>Feito</button>
             </div>
-        </div>
-        <div class="tarefa">
-            <p class="nomeTarefa">Título</p>
-            <p class="descricaoTarefa">Descrição</p>
-
-            <div class="buttons">
-                <button>A fazer</button>
-                <button>Fazendo</button>
-                <button>Pronto</button>
-            </div>
-        </div>
-        <div class="tarefa">
-            <p class="nomeTarefa">Título</p>
-            <p class="descricaoTarefa">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam necessitatibus molestiae ipsam. Repellendus, obcaecati aliquid! Laborum officia dicta facere quidem eos odit iusto earum quam alias perspiciatis, eligendi, modi debitis!</p>
-
-            <div class="buttons">
-                <button>A fazer</button>
-                <button>Fazendo</button>
-                <button>Pronto</button>
-            </div>
-        </div>
+    </div>
     </main>
 
 
@@ -87,5 +63,6 @@
 
     </main>
     
+    <script src="script.js"></script>
 </body>
 </html>
