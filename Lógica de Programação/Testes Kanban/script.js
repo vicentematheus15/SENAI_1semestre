@@ -27,9 +27,19 @@ function printar() {
     // tarefaEmAndamento.innerHTML = "";
     // tarefaFeito.innerHTML = "";
   
-      let p = document.createElement("p");
+      let p = document.createElement("p");  //criar uma div e colocar a classe que vou editar no css nela
       p.innerText = tarefa.descricao;
       tarefaParaFazer.appendChild(p);
+    //     colocar isso na div que vou criar
+    //   <p class="nomeTarefa">Título</p>
+    //     <p class="descricaoTarefa">Descrição</p>
+
+    //         <div class="buttons">
+    //             <button>Para fazer</button>
+    //             <button>Em andamento</button>
+    //             <button>Feito</button>
+    //         </div>
+
     };
   
   printar()
