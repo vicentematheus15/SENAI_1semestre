@@ -1,20 +1,20 @@
 let listaTarefas = [
 {   id: 1,
-    titulo: "estudar",
-    descricao: "estudar grid",
-    status: "feito"
+    titulo: "Estudar",
+    descricao: "Estudar grid",
+    status: "Feito"
 },
 {
     id: 2,
-    titulo: "revisar",
-    descricao: "revisar js",
-    status: "em andamento" 
+    titulo: "Revisar",
+    descricao: "Revisar js",
+    status: "Em andamento" 
 },
 {
     id:3,
-    titulo: "praticar",
-    descricao: "realizar exercícios",
-    status: "para fazer"
+    titulo: "Praticar",
+    descricao: "Realizar exercícios",
+    status: "Para fazer"
 }
 ]
 
@@ -23,23 +23,31 @@ function printar() {
     let tarefaEmAndamento = document.getElementById("tarefaEmAndamento");
     let tarefaFeito = document.getElementById("tarefaFeito");
     
-    // tarefaParaFazer.innerHTML = "";
-    // tarefaEmAndamento.innerHTML = "";
-    // tarefaFeito.innerHTML = "";
+    tarefaParaFazer.innerHTML = "";
+    tarefaEmAndamento.innerHTML = "";
+    tarefaFeito.innerHTML = "";
   
-      let p = document.createElement("p");  //criar uma div e colocar a classe que vou editar no css nela
-      p.innerText = tarefa.descricao;
-      tarefaParaFazer.appendChild(p);
-    //     colocar isso na div que vou criar
-    //   <p class="nomeTarefa">Título</p>
-    //     <p class="descricaoTarefa">Descrição</p>
+    listaTarefas.forEach((tarefa) => {
+        let div = document.createElement("div");
+        div.classList.add("tarefa");
+      
+        div.innerHTML = `
+        <p class="nomeTarefa">${tarefa.titulo}</p>
+        <p class="descricaoTarefa">${tarefa.descricao}</p>
+            <div class="buttons">
+                <button>A fazer</button>
+                <button>Fazendo</button>
+                <button>Pronto</button>
+            </div>`
 
-    //         <div class="buttons">
-    //             <button>Para fazer</button>
-    //             <button>Em andamento</button>
-    //             <button>Feito</button>
-    //         </div>
-
-    };
-  
+        if(listaTarefas.status === "Para fazer"){
+            tarefaParaFazer.appendChild(div);
+        }else if(listaTarefas.status === "Em andamento"){
+            tarefaEmAndamento.appendChild(div)
+        }else if(listaTarefas.status === "Feito"){
+            tarefaFeito.appendChild(div)
+        }
+   
+    });
+}
   printar()

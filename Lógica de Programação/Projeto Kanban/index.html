@@ -1,91 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gerenciador de Tarefas</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <main id="container">
+  <main id="container">
     
+    <!-- Cabeçalho -->
     <header>
-        <h2 class="titulo">Bem vindo</h2>
-        <h4 class="subtitulo">Sistema criado para gerenciamento de tarefa. Crie uma atividade clicando aqui</h4>
+      <h2 class="titulo">Bem vindo</h2>
+      <h4 class="subtitulo">Sistema criado para gerenciamento de tarefa. Crie uma atividade clicando aqui</h4>
     </header>
-       
-    <div class="tituloColuna"><h4>A fazer</h4></div>
-        <div class="tituloColuna"><h4>Fazendo</h4></div>
-        <div class="tituloColuna"><h4>Pronto</h4></div>
 
-        <div class="tarefa">
-            <p class="nomeTarefa">Título</p>
-            <p class="descricaoTarefa">Descrição</p>
+    <!-- Coluna: Para fazer -->
+    <div class="coluna colunaFazer">
+      <h4 class="tituloColuna">Para fazer</h4>
+      <div id="tarefaParaFazer" class="espacoTarefas"></div>
+    </div>
 
-            <div class="buttons">
-                <button>A fazer</button>
-                <button>Fazendo</button>
-                <button>Pronto</button>
-            </div>
-        </div>
-        <div class="tarefa">
-            <p class="nomeTarefa">Título</p>
-            <p class="descricaoTarefa">Descrição</p>
+    <!-- Coluna: Em andamento -->
+    <div class="coluna colunaEmAndamento">
+      <h4 class="tituloColuna">Em andamento</h4>
+      <div id="tarefaEmAndamento" class="espacoTarefas"></div>
+    </div>
 
-            <div class="buttons">
-                <button>A fazer</button>
-                <button>Fazendo</button>
-                <button>Pronto</button>
-            </div>
-        </div>
-        <div class="tarefa">
-            <p class="nomeTarefa">Título</p>
-            <p class="descricaoTarefa">Descrição</p>
+    <!-- Coluna: Feito -->
+    <div class="coluna colunaFeito">
+      <h4 class="tituloColuna">Feito</h4>
+      <div id="tarefaFeito" class="espacoTarefas"></div>
+    </div>
 
-            <div class="buttons">
-                <button>A fazer</button>
-                <button>Fazendo</button>
-                <button>Pronto</button>
-            </div>
-        </div>
-        <div class="tarefa">
-            <p class="nomeTarefa">Título</p>
-            <p class="descricaoTarefa">Descrição</p>
+  </main>
 
-            <div class="buttons">
-                <button>A fazer</button>
-                <button>Fazendo</button>
-                <button>Pronto</button>
-            </div>
-        </div>
-        <div class="tarefa">
-            <p class="nomeTarefa">Título</p>
-            <p class="descricaoTarefa">Descrição</p>
+  <!-- Espaço para formulário ou adicionar tarefas futuramente -->
+  <main id="adicionar"></main>
 
-            <div class="buttons">
-                <button>A fazer</button>
-                <button>Fazendo</button>
-                <button>Pronto</button>
-            </div>
-        </div>
-        <div class="tarefa">
-            <p class="nomeTarefa">Título</p>
-            <p class="descricaoTarefa">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam necessitatibus molestiae ipsam. Repellendus, obcaecati aliquid! Laborum officia dicta facere quidem eos odit iusto earum quam alias perspiciatis, eligendi, modi debitis!</p>
-
-            <div class="buttons">
-                <button>A fazer</button>
-                <button>Fazendo</button>
-                <button>Pronto</button>
-            </div>
-        </div>
-    </main>
-
-
-    
-    <main id="adicionar">
-
-    </main>
-    
+  <script src="script.js"></script>
 </body>
 </html>
