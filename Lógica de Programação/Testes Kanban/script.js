@@ -15,6 +15,12 @@ let listaTarefas = [
     titulo: "Praticar",
     descricao: "Realizar exercícios",
     status: "Para fazer"
+},
+{
+    id:3,
+    titulo: "Praticar",
+    descricao: "Realizar exercícios",
+    status: "Em andamento"
 }
 ]
 
@@ -22,32 +28,32 @@ function printar() {
     let tarefaParaFazer = document.getElementById("tarefaParaFazer");
     let tarefaEmAndamento = document.getElementById("tarefaEmAndamento");
     let tarefaFeito = document.getElementById("tarefaFeito");
-    
+
+    // Limpa só as tarefas (não o título da coluna)
     tarefaParaFazer.innerHTML = "";
     tarefaEmAndamento.innerHTML = "";
     tarefaFeito.innerHTML = "";
-  
+
     listaTarefas.forEach((tarefa) => {
         let div = document.createElement("div");
         div.classList.add("tarefa");
-      
-        div.innerHTML = `
-        <p class="nomeTarefa">${tarefa.titulo}</p>
-        <p class="descricaoTarefa">${tarefa.descricao}</p>
-            <div class="buttons">
-                <button>A fazer</button>
-                <button>Fazendo</button>
-                <button>Pronto</button>
-            </div>`
 
-        if(listaTarefas.status === "Para fazer"){
+        div.innerHTML = `
+            <p class="nomeTarefa">${tarefa.titulo}</p>
+            <p class="descricaoTarefa">${tarefa.descricao}</p>
+            <div class="buttons">
+                <button>Para fazer</button>
+                <button>Em andamento</button>
+                <button>Feito</button>
+            </div>`;
+
+        if (tarefa.status === "Para fazer") {
             tarefaParaFazer.appendChild(div);
-        }else if(listaTarefas.status === "Em andamento"){
-            tarefaEmAndamento.appendChild(div)
-        }else if(listaTarefas.status === "Feito"){
-            tarefaFeito.appendChild(div)
+        } else if (tarefa.status === "Em andamento") {
+            tarefaEmAndamento.appendChild(div);
+        } else if (tarefa.status === "Feito") {
+            tarefaFeito.appendChild(div);
         }
-   
     });
 }
-  printar()
+printar()
