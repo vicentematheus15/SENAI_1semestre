@@ -1,23 +1,20 @@
 let listaTarefas = [
-  { id: 1, 
+  { 
     titulo: "Estudar", 
     descricao: "Estudar grid", 
     status: "Feito"
   },
   {
-    id: 2,
     titulo: "Revisar",
     descricao: "Revisar js",
     status: "Em andamento",
   },
   {
-    id: 3,
     titulo: "Praticar",
     descricao: "Realizar exercícios",
     status: "Para fazer",
   },
   {
-    id: 3,
     titulo: "Praticar",
     descricao: "Realizar exercícios",
     status: "Em andamento",
@@ -66,10 +63,11 @@ function mostrarTarefas() {
     }
   });
 }
+mostrarTarefas();
 
 function adicionarTarefa(){
-    let titulo;
-    let descricao;
+    let titulo = prompt("Digite o título da tarefa");
+    let descricao = prompt("Digite a descrição da tarefa");
 
     listaTarefas.push(
         {
@@ -78,7 +76,7 @@ function adicionarTarefa(){
         status: "Para fazer"
         }
     )
+    mostrarTarefas()
 }
 
 
-mostrarTarefas();
