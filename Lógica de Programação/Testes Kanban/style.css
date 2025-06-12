@@ -7,7 +7,7 @@ header{
     background-color: #b2cbc9;
     grid-column: span 3;
     align-items: center;
-    padding: 0px 0px;
+    padding: 0px 0px 10px 0px;
     border-radius: 10px;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
@@ -55,14 +55,21 @@ header{
     gap: 10px;
     padding: 10px;
 }
-.buttons{
+.buttonNovaTarefa{
+    width: auto;
+    padding: 5px;
+    margin: 0px;
+    border-radius: 10px;
+}
+.buttonStatus{
     display: flex;
     align-items: end;
     justify-content: space-around;
     padding: 10px;
 }
 button{
-    width: 110px;
+    width: auto;
+    border-radius: 5px;
 }
 button:hover{
     background-color: rgb(189, 183, 183);

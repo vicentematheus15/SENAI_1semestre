@@ -51,7 +51,7 @@ function mostrarTarefas() {
     div.innerHTML = `
             <strong>${tarefa.titulo}</strong>
             <p>${tarefa.descricao}</p>
-            <div class="buttons">
+            <div class="buttonStatus">
                 <button onclick="alterarStatus(${index},'Para fazer')">Para fazer</button>
                 <button onclick="alterarStatus(${index},'Em andamento')">Em andamento</button>
                 <button onclick="alterarStatus(${index},'Feito')">Feito</button>
