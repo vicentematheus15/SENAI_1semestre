@@ -2,7 +2,7 @@ let listaTarefas = [
   { 
     titulo: "Exemplo de título 1", 
     descricao: "Exemplo de descrição 1", 
-    status: "Feito"
+    status: "Para fazer"
   },
   {
     titulo: "Exemplo de título 2",
@@ -12,7 +12,7 @@ let listaTarefas = [
   {
     titulo: "Exemplo de título 3",
     descricao: "Exemplo de descrição 3",
-    status: "Para fazer",
+    status: "Feito",
   },
 ];
 
