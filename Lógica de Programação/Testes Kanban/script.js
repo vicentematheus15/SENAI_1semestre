@@ -1,23 +1,18 @@
 let listaTarefas = [
   { 
-    titulo: "Estudar", 
-    descricao: "Estudar grid", 
+    titulo: "Exemplo de título 1", 
+    descricao: "Exemplo de descrição 1", 
     status: "Feito"
   },
   {
-    titulo: "Revisar",
-    descricao: "Revisar js",
+    titulo: "Exemplo de título 2",
+    descricao: "Exemplo de descrição 2",
     status: "Em andamento",
   },
   {
-    titulo: "Praticar",
-    descricao: "Realizar exercícios",
+    titulo: "Exemplo de título 3",
+    descricao: "Exemplo de descrição 3",
     status: "Para fazer",
-  },
-  {
-    titulo: "Praticar",
-    descricao: "Realizar exercícios",
-    status: "Em andamento",
   },
 ];
 
