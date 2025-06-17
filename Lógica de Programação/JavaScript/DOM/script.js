@@ -6,4 +6,6 @@ function enviarDados(){
     alert(`${matricula} - ${aluno}`)
     document.getElementById("idMatricula").value = ""
     document.querySelector("#idAluno").value = ""
+
+    document.querySelector("#nomeAluno").innerHTML = aluno
 }
