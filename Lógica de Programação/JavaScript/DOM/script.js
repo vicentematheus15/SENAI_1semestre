@@ -9,3 +9,7 @@ function enviarDados(){
 
     document.querySelector("#nomeAluno").innerHTML = aluno
 }
+
+function trocaNome(){
+    document.querySelector("#nomeAluno").innerHTML = "Fulano da Silva"
+}
