@@ -7,16 +7,31 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <h1>Manipulando os Elementos</h1>
+    <h1 id="titulo" onmouseover="mudaCor()">Manipulando os Elementos</h1>
     <hr>
 
     <label for="idMatricula">Matrícula: </label>
     <input type="text" id="idMatricula" placeholder="Digite sua matrícula">
+    <br><br>
     <label for="idAluno">Aluno: </label>
     <input type="text" id="idAluno" placeholder="Nome completo do aluno">
-
+    <br><br>
+    <label for="menor">Menor de idade:</label>
+    <input type="checkbox" id="menor">
+    <br><br>
+    <label for="idSenha">Senha: </label>
+    <input type="password" id="idSenha">
+    <br><br>
+    <label for="idCursos">Cursos: </label>
+    <select name="cursos" id="idCursos">
+        <option value="desi">Des. de Sistemas</option>
+        <option value="eletronica">Eletrônica</option>
+        <option value="eletrotecnica">Eletrotécnica</option>
+        <option value="refrigeracao">Refrigeração</option>
+    </select>
+    <br><br>
     <button onclick="enviarDados()">Enviar</button>
-
+    <br><br>
     <h2 id="nomeAluno" onmouseover="trocaNome()"></h2>
 
 </body>

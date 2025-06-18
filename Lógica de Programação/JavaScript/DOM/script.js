@@ -8,8 +8,19 @@ function enviarDados(){
     document.querySelector("#idAluno").value = ""
 
     document.querySelector("#nomeAluno").innerHTML = aluno
+
+    if(document.getElementById("menor").checked){
+        const resp = prompt("Digite o nome do responsável")
+    }
+    alert(`Sua senha é: ${document.getElementById("idSenha").value} `)
+
+    alert(`Você está cursando ${document.getElementById("idCursos").value}`)
 }
 
 function trocaNome(){
     document.querySelector("#nomeAluno").innerHTML = "Fulano da Silva"
 }
+
+// function mudaCor(){
+//     document.querySelector("#titulo")
+// }
