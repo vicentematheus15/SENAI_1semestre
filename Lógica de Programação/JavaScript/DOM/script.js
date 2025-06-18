@@ -13,6 +13,10 @@ function enviarDados(){
         const resp = prompt("Digite o nome do responsável")
     }
     alert(`Sua senha é: ${document.getElementById("idSenha").value} `)
+    // let sen = document.getElementById("idSenha")
+    // if(sen === senai){
+    //     alert(`Acesso permitido!`)
+    // }
 
     alert(`Você está cursando ${document.getElementById("idCursos").value}`)
 }
