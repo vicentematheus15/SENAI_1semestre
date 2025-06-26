@@ -5,17 +5,13 @@
 .cabecalho{
     display: flex;
     justify-content: space-between;
+    margin: 0px 20px;
     margin-bottom: 0px;
-    margin-block-start: 0px;  }
+    margin-block-start: 0px; 
+}
 .tituloCabecalho{
     margin-block-start: 10px;
     margin-block-end: 5px;
-}
-.logoCabecalho{
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    margin-right: 30px;
 }
 hr{
     background-color: black; 
