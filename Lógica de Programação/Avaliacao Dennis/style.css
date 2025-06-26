@@ -22,11 +22,22 @@ hr{
 .conteudo{
     display: flex;
     justify-content: space-around;
-    padding: 0px 150px;
+    padding: 20px 150px;
 }
 img{
     width: 350px;
     height: 450px;
+}
+.nomeProduto{
+    text-align: center;
+    font-size: 25px;
+}
+.descricaoProduto{
+    padding: 20px;
+}
+.precoProduto{
+    text-align: center;
+    font-size: 25px;
 }
 #logoSenai{
     width: 100px;
@@ -41,17 +52,6 @@ img{
     border: solid 2px gray;
     border-radius: 10px;
 }
-.nomeProduto{
-    text-align: center;
-    font-size: 25px;
-}
-.descricaoProduto{
-    padding: 20px;
-}
-.precoProduto{
-    text-align: center;
-    font-size: 25px;
-}
 #button{
     align-content: center;
     width: 300px;
@@ -62,8 +62,4 @@ img{
     border: 1px solid;
     border-radius: 25px;
     font-size: 30px;
-}
-footer{
-    text-align: center;
-    
 }
