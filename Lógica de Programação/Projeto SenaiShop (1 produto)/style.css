@@ -72,6 +72,9 @@ img{
     border-radius: 25px;
     font-size: 30px;
 }
+#button:hover{
+    background-color: #002fff;
+}
 a{
     color: #f5efe7;
 }
