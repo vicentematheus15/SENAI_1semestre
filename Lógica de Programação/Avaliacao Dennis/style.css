@@ -2,16 +2,21 @@
     margin: 0px;
     padding: 0px;
 }
+body{
+    background-color: #f8efed;
+}
 .cabecalho{
     display: flex;
     justify-content: space-between;
-    margin: 0px 20px;
+    padding: 0px 20px;
     margin-bottom: 0px;
-    margin-block-start: 0px; 
+    margin-block-start: 0px;
+    background-color: #2668ba;
 }
 .tituloCabecalho{
     margin-block-start: 10px;
     margin-block-end: 5px;
+    color: white;
 }
 hr{
     background-color: black; 
@@ -38,6 +43,7 @@ img{
 .precoProduto{
     text-align: center;
     font-size: 25px;
+    font-weight: bold;
 }
 #logoSenai{
     width: 100px;
@@ -51,15 +57,19 @@ img{
     width: 350px;
     border: solid 2px gray;
     border-radius: 10px;
+    padding: 10px;
+    background-color: #eff1f3;
 }
 #button{
     align-content: center;
     width: 300px;
     height: 90px;
     cursor:pointer;
-	background-color:#0047B6;
-    color: #FEFEFE;
+	background-color:#2668ba;
     border: 1px solid;
     border-radius: 25px;
     font-size: 30px;
+}
+a{
+    color: #f5efe7;
 }
