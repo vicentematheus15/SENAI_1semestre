@@ -1,13 +1,14 @@
-localStorage.setItem("id", "3215")
-localStorage.setItem("nome", "Maria")
-localStorage.setItem("sobrenome", "Souza")
-localStorage.setItem("email", "maria@gmail.com")
+let cpf, nome, sobrenome, email, telefone
 
-let nome = localStorage.getItem("nome")
-let sobrenome = localStorage.getItem("sobrenome")
-
-// alert(`${nome} ${sobrenome}`)
-
-//localStorage.removeItem("sobrenome")  remove o sobrenome
-
-//localStorage.clear() remove todos os dados
+function getDados(){
+    cpf = document.getElementById("cpf").value
+    nome = document.getElementById("nome").value
+    sobrenome = document.getElementById("sobrenome").value
+    email = document.getElementById("email").value
+    telefone = document.getElementById("teleofne").value
+    localStorage.setItem("cpf", cpf)
+    localStorage.setItem("nome", nome)
+    localStorage.setItem("sobrenome", sobrenome)
+    localStorage.setItem("email", email)
+    localStorage.setItem("telefone", telefone)
+}
