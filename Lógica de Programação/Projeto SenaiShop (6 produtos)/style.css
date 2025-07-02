@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
 }
-
 #container{
     height: 100vh;
     width: 100vw;
@@ -17,10 +16,8 @@ header{
     justify-content: space-between;
     padding: 0rem 2rem;
 }
-section{
-    background-color: cadetblue;
-}
 .produtos{
+    background-color: cadetblue;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,9 +28,6 @@ section{
 }
 .tituloProduto{
     font-size:large;
-}
-.descricaoProduto{
-    font-size: medium;
 }
 .precoProduto{
     font-size: x-large;
@@ -53,7 +47,6 @@ footer{
     grid-column: span 3;
     background-color: aqua;
     text-align: center;
-    
 }
 #logoSenai{
     width: 6.25rem;
