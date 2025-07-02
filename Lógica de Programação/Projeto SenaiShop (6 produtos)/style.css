@@ -49,8 +49,6 @@ section{
     text-decoration: none;
     color: black;
 }
-
-
 footer{
     grid-column: span 3;
     background-color: aqua;
