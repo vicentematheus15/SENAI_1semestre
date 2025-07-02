@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+header{
+    background-color: blueviolet;
+    grid-column: span 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+section{
+    background-color: cadetblue;
+}
+.produtos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: justify;
+    padding: 0rem 9.5rem;
+}
+.tituloProduto{
+    font-size:large;
+}
+/* .descricaoProduto{
+    font-size: medium;
+} */
+.precoProduto{
+    font-size: x-large;
+}
+
+
+
+footer{
+    grid-column: span 3;
+    background-color: aqua;
+    
+}
+#logoSenai{
+    width: 6.25rem;
+    height: 2rem;
+}
+.imgCamisa{
+    width: 12.5rem;
+    height: 18.75rem;
+}
