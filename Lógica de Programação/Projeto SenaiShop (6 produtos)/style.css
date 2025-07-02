@@ -15,6 +15,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0rem 2rem;
 }
 section{
     background-color: cadetblue;
@@ -25,23 +26,35 @@ section{
     align-items: center;
     justify-content: space-around;
     text-align: justify;
-    padding: 0rem 9.5rem;
+    padding: 0rem 5rem;
+    border: solid black;
 }
 .tituloProduto{
     font-size:large;
 }
-/* .descricaoProduto{
+.descricaoProduto{
     font-size: medium;
-} */
+}
 .precoProduto{
     font-size: x-large;
 }
-
+.btComprar{
+    width: 10rem;
+    height: 2rem;
+    border-radius: 1rem;
+    background-color: green;
+    color: ;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
 
 
 footer{
     grid-column: span 3;
     background-color: aqua;
+    text-align: center;
     
 }
 #logoSenai{
@@ -49,6 +62,6 @@ footer{
     height: 2rem;
 }
 .imgCamisa{
-    width: 12.5rem;
-    height: 18.75rem;
+    width: 8.5rem;
+    height: 14.75rem;
 }
