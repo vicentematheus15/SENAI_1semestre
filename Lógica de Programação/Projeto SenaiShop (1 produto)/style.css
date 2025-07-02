@@ -5,6 +5,11 @@
 body{
     background-color: #f8efed;
 }
+main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
 .cabecalho{
     display: flex;
     justify-content: space-between;
@@ -26,8 +31,10 @@ hr{
 }
 .conteudo{
     display: flex;
-    justify-content: space-around;
-    padding: 20px 150px;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    height: 100%;
 }
 img{
     width: 350px;
@@ -56,6 +63,7 @@ img{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    height: 430px;
     width: 350px;
     border: solid 2px gray;
     border-radius: 10px;
