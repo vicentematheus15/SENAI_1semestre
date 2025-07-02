@@ -1,59 +1,77 @@
 let listaTarefas = [
-{   id: 1,
-    titulo: "Estudar",
-    descricao: "Estudar grid",
-    status: "Feito"
-},
-{
-    id: 2,
-    titulo: "Revisar",
-    descricao: "Revisar js",
-    status: "Em andamento" 
-},
-{
-    id:3,
-    titulo: "Praticar",
-    descricao: "Realizar exercícios",
+  { 
+    titulo: "Exemplo de título 1", 
+    descricao: "Exemplo de descrição 1", 
     status: "Para fazer"
-},
-{
-    id:3,
-    titulo: "Praticar",
-    descricao: "Realizar exercícios",
-    status: "Em andamento"
+  },
+  {
+    titulo: "Exemplo de título 2",
+    descricao: "Exemplo de descrição 2",
+    status: "Em andamento",
+  },
+  {
+    titulo: "Exemplo de título 3",
+    descricao: "Exemplo de descrição 3",
+    status: "Feito",
+  },
+];
+
+function alterarStatus(index, novoStatus){
+    let tarefa = listaTarefas[index]
+    tarefa.status = novoStatus
+    listaTarefas[index] = tarefa
+    mostrarTarefas()
 }
-]
 
-function printar() {
-    let tarefaParaFazer = document.getElementById("tarefaParaFazer");
-    let tarefaEmAndamento = document.getElementById("tarefaEmAndamento");
-    let tarefaFeito = document.getElementById("tarefaFeito");
 
-    // Limpa só as tarefas (não o título da coluna)
-    tarefaParaFazer.innerHTML = "";
-    tarefaEmAndamento.innerHTML = "";
-    tarefaFeito.innerHTML = "";
+function mostrarTarefas() {
+  let tarefaParaFazer = document.getElementById("tarefaParaFazer");
+  let tarefaEmAndamento = document.getElementById("tarefaEmAndamento");
+  let tarefaFeito = document.getElementById("tarefaFeito");
 
-    listaTarefas.forEach((tarefa) => {
-        let div = document.createElement("div");
-        div.classList.add("tarefa");
+  // Limpa só as tarefas (não o título da coluna)
+  tarefaParaFazer.innerHTML = "";
+  tarefaEmAndamento.innerHTML = "";
+  tarefaFeito.innerHTML = "";
 
-        div.innerHTML = `
-            <p class="nomeTarefa">${tarefa.titulo}</p>
-            <p class="descricaoTarefa">${tarefa.descricao}</p>
-            <div class="buttons">
-                <button>Para fazer</button>
-                <button>Em andamento</button>
-                <button>Feito</button>
+  //para cara tarefa na array listaTarefas, cria uma nova div
+  listaTarefas.forEach((tarefa, index) => {
+    let div = document.createElement("div");
+    div.setAttribute('class','tarefa');
+
+
+    div.innerHTML = `
+            <strong>${tarefa.titulo}</strong>
+            <p>${tarefa.descricao}</p>
+            <div class="buttonStatus">
+                <button onclick="alterarStatus(${index},'Para fazer')">Para fazer</button>
+                <button onclick="alterarStatus(${index},'Em andamento')">Em andamento</button>
+                <button onclick="alterarStatus(${index},'Feito')">Feito</button>
             </div>`;
 
-        if (tarefa.status === "Para fazer") {
-            tarefaParaFazer.appendChild(div);
-        } else if (tarefa.status === "Em andamento") {
-            tarefaEmAndamento.appendChild(div);
-        } else if (tarefa.status === "Feito") {
-            tarefaFeito.appendChild(div);
-        }
-    });
+    if (tarefa.status === "Para fazer") {
+      tarefaParaFazer.appendChild(div);
+    } else if (tarefa.status === "Em andamento") {
+      tarefaEmAndamento.appendChild(div);
+    } else if (tarefa.status === "Feito") {
+      tarefaFeito.appendChild(div);
+    }
+  });
 }
-printar()
+mostrarTarefas();
+
+function adicionarTarefa(){
+    let titulo = prompt("Digite o título da tarefa");
+    let descricao = prompt("Digite a descrição da tarefa");
+
+    listaTarefas.push(
+        {
+        titulo: titulo,
+        descricao: descricao,
+        status: "Para fazer"
+        }
+    )
+    mostrarTarefas()
+}
+
+
