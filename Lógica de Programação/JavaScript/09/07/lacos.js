@@ -8,14 +8,14 @@ let alunos = ["MARIA", "PEDRO", "ASTOLFO", "RODRIGO", "CAIO", "ANA"]
 
 //  FOR IN
 // cria uma variavel pra receber o nome dos alunos
-// para cada nome em alunos, escreva alunos na posição nome
+// para cada nome (índice) em alunos, escreva alunos na posição nome
 // for(let nome in alunos){
 //     console.log(alunos[nome])
 // }
 
 
 //  FOR OF  (nem precisa declarar com let a variavel)
-//para cada nome de alunos, escreva nome
+//para cada nome (valor) de alunos, escreva nome
 // for(nome of alunos){
 //     console.log(nome)
 // }
