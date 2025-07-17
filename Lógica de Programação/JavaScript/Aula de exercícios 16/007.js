@@ -7,6 +7,5 @@ for(let i = num; i > 1; i--){
     }else{
         fat *= i
     }
-
 }
 alert(`O fatorial de ${num} é igual a ${fat}`)
