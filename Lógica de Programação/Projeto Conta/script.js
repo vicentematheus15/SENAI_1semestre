@@ -1,7 +1,7 @@
 let cliente = []
 let tipoConta = []
 let limite = []
-let saldo = []
+let saldo = 0
 
 if(localStorage.clils){
     cliente = JSON.parse(localStorage.getItem('clils'))
@@ -17,11 +17,13 @@ function cadCli(){
     let novoCli = document.getElementById("cliente").value
     cliente.push(novoCli)
     localStorage.clils = JSON.stringify(cliente)
-    let tipo = document.getElementById(tipo_conta).value
+    let tipo = document.getElementById("tipo_conta").value
     tipoConta.push(tipo)
-    localStorage.tipols = JSON.stringify(tipo)
+    localStorage.tipols = JSON.stringify(tipoConta)
 }
 
-function deposita(valor){
-    valor= document.getElementById("deposito").value
+function deposita(){
+    let valor = Number(document.getElementById("deposito").value)
+    saldo += valor
+    localStorage.setItem('saldols', saldo)
 }
