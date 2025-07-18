@@ -4,10 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banco Senai</title>
+    <script src="script.js"></script>
 </head>
 <body>
     <h1>Banco Senai</h1>
     <hr>
-    <select name="" id="tipoConta"></select>
+    <label for="">Tipo de conta:</label>
+    <select name="" id="tipoConta">
+        <option value="contaCorrente">Conta Corrente</option>
+        <option value="poupanca">Poupança</option>
+    </select>
+
+    <label for="cliente">Cliente:</label>
+    <input type="text" id="cliente">
+
+    <br>
+
+    <label for="">Limite:</label>
+    <input type="text" id="limite" value="0" max="6">
+
+    <br>
+
+    <label for="saldo">Saldo</label>
+    <input type="text" id="saldo" value="0">
+
+    <br>
+
+    <label for="deposito">Depósito</label>
+    <input type="text" id="deposito" value = "0">
+    <button>Depositar</button>
+    <br><br>
+    <label for="saque">Saque</label>
+    <input type="text" id="saque" value="0">
+    <button>Saque</button>
 </body>
 </html>
