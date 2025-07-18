@@ -10,8 +10,8 @@
     <h1>Banco Senai</h1>
     <hr>
     <label for="">Tipo de conta:</label>
-    <select name="" id="tipoConta">
-        <option value="contaCorrente">Conta Corrente</option>
+    <select name="" id="tipo_conta">
+        <option value="conta_corrente">Conta Corrente</option>
         <option value="poupanca">Poupança</option>
     </select>
 
@@ -32,10 +32,16 @@
 
     <label for="deposito">Depósito</label>
     <input type="text" id="deposito" value = "0">
-    <button>Depositar</button>
+    <button onclick="deposita()">Depositar</button>
+
     <br><br>
+
     <label for="saque">Saque</label>
     <input type="text" id="saque" value="0">
     <button>Saque</button>
+
+    <br>
+
+    <button onclick="cadCli()">Cadastrar</button>
 </body>
 </html>
