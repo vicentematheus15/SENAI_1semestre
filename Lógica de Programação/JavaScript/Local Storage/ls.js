@@ -8,30 +8,35 @@ function getDados() {
   if (localStorage.cpfLS) {
     cpf = JSON.parse(localStorage.getItem("cpfLS"));
   }
+
   cpf.push(document.getElementById("cpf").value);
   localStorage.cpfLS = JSON.stringify(cpf);
 
   if (localStorage.nomeLS) {
     nome = JSON.parse(localStorage.getItem("nomeLS"));
   }
+
   nome.push(document.getElementById("nome").value);
   localStorage.nomeLS = JSON.stringify(nome);
 
   if (localStorage.sobrenomeLS) {
     sobrenome = JSON.parse(localStorage.getItem("sobrenomeLS"));
   }
+
   sobrenome.push(document.getElementById("sobrenome").value);
   localStorage.sobrenomeLS = JSON.stringify(sobrenome);
 
   if (localStorage.emailLS) {
     email = JSON.parse(localStorage.getItem("emailLS"));
   }
+
   email.push(document.getElementById("email").value);
   localStorage.emailLS = JSON.stringify(email);
 
   if (localStorage.telefoneLS) {
     telefone = JSON.parse(localStorage.getItem("telefoneLS"));
   }
+  
   telefone.push(document.getElementById("telefone").value);
   localStorage.telefoneLS = JSON.stringify(telefone);
 
