@@ -12,6 +12,7 @@ let tarefas = [
 ]
 
 function renderizarTarefas(){
+    lista.innerHTML = ""
     for(let tarefa of tarefas){
         let itemLista = document.createElement('li')
         itemLista.setAttribute('class', 'list-group-item list-group-item-action')
@@ -23,7 +24,6 @@ function renderizarTarefas(){
 renderizarTarefas()
 
 btn.onclick = function(){
-    // tarefas = [""]
     let novaTarefa = input.value
     removeSpans()
     if(novaTarefa != ""){
