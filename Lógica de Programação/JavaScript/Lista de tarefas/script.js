@@ -16,6 +16,9 @@ function renderizarTarefas(){
     for(let tarefa of tarefas){
         let itemLista = document.createElement('li')
         itemLista.setAttribute('class', 'list-group-item list-group-item-action')
+        itemLista.onmouseover = function(){
+            itemLista.style.cursor = "pointer"
+        }
         let itemTexto = document.createTextNode(tarefa)
         itemLista.appendChild(itemTexto)
         lista.appendChild(itemLista)
