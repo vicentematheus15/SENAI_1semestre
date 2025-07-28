@@ -19,6 +19,9 @@ function renderizarTarefas(){
         itemLista.onmouseover = function(){
             itemLista.style.cursor = "pointer"
         }
+        itemLista.onclick = function(){
+            deletarTarefa(this)
+        }
         let itemTexto = document.createTextNode(tarefa)
         itemLista.appendChild(itemTexto)
         lista.appendChild(itemLista)
@@ -47,4 +50,9 @@ function removeSpans(){
     for(let i = 0; i < spans.length; i++){
         card.removeChild(spans[i])
     }
+}
+
+function deletarTarefa(tar){
+    tarefas.splice(tarefas.indexOf(tar.textContent), 1)
+    renderizarTarefas()
 }
