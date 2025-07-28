@@ -10,13 +10,6 @@ let tarefas = [
     "Ler um livro"   
 ]
 
-
-/* <li class="list-group-item list-group-item-action">Jogar videogame</li>
-                            <li class="list-group-item list-group-item-action">Estudar JavaScript</li>
-                            <li class="list-group-item list-group-item-action">Assistir um filme</li>
-                            <li class="list-group-item list-group-item-action">Estudar Python</li>
-                            <li class="list-group-item list-group-item-action">Ler um livro</li> */
-
 function renderizarTarefas(){
     for(let tarefa of tarefas){
         let itemLista = document.createElement('li')
@@ -27,3 +20,9 @@ function renderizarTarefas(){
     }
 }
 renderizarTarefas()
+
+btn.onclick = function(){
+    let novaTarefa = input.value
+    tarefas.push(novaTarefa)
+    renderizarTarefas()
+}
