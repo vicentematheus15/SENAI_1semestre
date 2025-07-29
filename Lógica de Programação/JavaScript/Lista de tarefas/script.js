@@ -3,13 +3,7 @@ let btn = document.querySelector('#botao')
 let lista = document.querySelector("#lista")
 let card = document.querySelector(".card")
 
-let tarefas = [
-    "Jogar videogame",
-    "Estudar JavaScript",
-    "Assistir um filme",
-    "Estudar Python",
-    "Ler um livro"   
-]
+let tarefas = JSON.parse(localStorage.getItem('tarefas')) || []
 
 function renderizarTarefas(){
     lista.innerHTML = ""
@@ -36,6 +30,7 @@ btn.onclick = function(){
         input.value = ""
         tarefas.push(novaTarefa)
         renderizarTarefas()
+        salvaDadosNoStorage()
     }else{
         let span = document.createElement('span')
         span.setAttribute('class', 'alert alert-warning')
@@ -55,4 +50,9 @@ function removeSpans(){
 function deletarTarefa(tar){
     tarefas.splice(tarefas.indexOf(tar.textContent), 1)
     renderizarTarefas()
+    salvaDadosNoStorage()
+}
+
+function salvaDadosNoStorage(){
+    localStorage.setItem('tarefas', JSON.stringify(tarefas)) 
 }
