@@ -8,6 +8,9 @@ class Pessoa{
         this.nome = nome
         this.sobrenome = sobrenome
     }
+    nomeCompleto(){
+        return this.nome + " " +this.sobrenome
+    }
 }
 
 class Carro{
@@ -18,4 +21,4 @@ class Carro{
 }
 
 let p1 = new Pessoa("Pedro", "de Souza")
-console.log(p1)
+console.log(p1.nomeCompleto())
