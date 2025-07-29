@@ -17,3 +17,5 @@ class Carro{
     }
 }
 
+let p1 = new Pessoa("Pedro", "de Souza")
+console.log(p1)
