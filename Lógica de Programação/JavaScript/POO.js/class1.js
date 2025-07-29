@@ -22,3 +22,5 @@ class Carro{
 
 let p1 = new Pessoa("Pedro", "de Souza")
 console.log(p1.nomeCompleto())
+let p2 = new Pessoa("Ana Paula", "Althoff")
+console.log(p2.nomeCompleto())
