@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Senai</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Banco Senai</h1>
+    <hr>
+    <label for="tipo_conta">Tipo de conta:</label>
+    <select name="" id="tipo_conta">
+        <option value="conta_corrente">Conta Corrente</option>
+        <option value="poupanca">Poupança</option>
+    </select>
+
+    <label for="cliente">Cliente:</label>
+    <input type="text" id="cliente">
+
+    <br>
+
+    <label for="limite">Limite:</label>
+    <input type="text" id="limite" value="0" max="6">
+
+    <br>
+
+    <label for="saldo">Saldo</label>
+    <input type="text" id="saldo" value="0">
+
+    <br>
+
+    <label for="deposito">Depósito</label>
+    <input type="text" id="deposito" value = "0">
+    <button onclick="deposita()">Depositar</button>
+
+    <br><br>
+
+    <label for="saque">Saque</label>
+    <input type="text" id="saque" value="0">
+    <button>Saque</button>
+
+    <br>
+
+    <button onclick="cadCli()">Cadastrar</button>
+</body>
+</html>
