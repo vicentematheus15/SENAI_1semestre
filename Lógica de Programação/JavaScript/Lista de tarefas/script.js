@@ -19,9 +19,25 @@ function renderizarTarefas(){
         let itemTexto = document.createTextNode(tarefa)
         itemLista.appendChild(itemTexto)
         lista.appendChild(itemLista)
+
+        let botao = document.createElement('button')
+        botao.textContent = "Editar"
+        botao.setAttribute('class', 'btn btn-primary')
+        lista.appendChild(botao)
+        botao.onclick = function(){
+            editarTarefa(itemLista)
+        }
+        
     }
 }
 renderizarTarefas()
+
+function editarTarefa(tarefa){
+    let tarefaNova = prompt("Digite o conteúdo da nova tarefa")
+    tarefas.splice(tarefas.indexOf(tarefa.textContent), 1, tarefaNova)
+    renderizarTarefas()
+    salvaDadosNoStorage()
+}
 
 btn.onclick = function(){
     let novaTarefa = input.value
