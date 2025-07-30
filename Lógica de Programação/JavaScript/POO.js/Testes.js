@@ -1,3 +1,6 @@
 const Funcionario = require('./Funcionario')
-let p1 = new Funcionario("José", "Mendonça", "456456412", "jm@senai.br", "TI", 3200,56)
-console.log(p1.recebeAumento(20).toFixed(2))
+const Funcao = require('./Funcao')
+
+let prof = new Funcao("Professor", 4275,22)
+let func1 = new Funcionario("Sandro", "Silva", "45789565621", "ss@Blob.com.br", prof)
+console.table(func1)
