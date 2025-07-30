@@ -35,12 +35,20 @@ class Pessoa{
     }
 }
 
-let p1 = new Pessoa("Pedro", "de Souza")
-// console.log(p1.nomeCompleto())
-let p2 = new Pessoa("Ana Paula", "Althoff")
-// console.log(p2.nomeCompleto())
+// let p1 = new Pessoa("Pedro", "de Souza")
+// // console.log(p1.nomeCompleto())
 
-p2.comer("caldo")
+// let p2 = new Pessoa("Ana Paula", "Althoff")
+// // console.log(p2.nomeCompleto())
+// p2.comer("caldo")
+
+let p3 = new Pessoa("Carlos", "Martins")
+// console.log(p3.nome)
+
+// console.log(Object.keys(p3))
+// console.log(Object.values(p3))
+console.log(Object.entries(p3))
+
 
 
 class Carro{
