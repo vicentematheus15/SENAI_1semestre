@@ -1,4 +1,4 @@
-class Pessoas{
+class Pessoa{
     constructor(nome, sobrenome, CPF, email){
         this._nome = nome
         this._sobrenome = sobrenome
@@ -31,7 +31,7 @@ class Pessoas{
     }
 }
 
-class Alunos extends Pessoas{
+class Aluno extends Pessoa{
     constructor(nome, sobrenome, CPF, email, matricula, curso, idade){
         super(nome, sobrenome, CPF, email)
         this._matricula = matricula
@@ -58,9 +58,9 @@ class Alunos extends Pessoas{
     }
 }
 
-let al1 = new Alunos("Nicodemos", "de Souza", "12345678910", "nds@gmail.com", 45987, "Banco de dados, 18")
+let al1 = new Aluno("Nicodemos", "de Souza", "12345678910", "nds@gmail.com", 45987, "Banco de dados, 18")
 
-class Professores extends Pessoas{
+class Professor extends Pessoa{
     constructor(nome, sobrenome, CPF, email, area_de_formacao, salario){
         super(nome, sobrenome, CPF, email)
         this._area_de_formacao = area_de_formacao
@@ -87,7 +87,7 @@ class Professores extends Pessoas{
         return salario * 12
     }
 }
-let prof1 = new Professores("Marcos", "Santos", "123.456.789-23", "marcos@gmail.com", "Desenvolvimento de Sistemas", 5000)
+let prof1 = new Professor("Marcos", "Santos", "123.456.789-23", "marcos@gmail.com", "Desenvolvimento de Sistemas", 5000)
 console.table(prof1)
 prof1.recebeAumento(salario)
 prof1.
