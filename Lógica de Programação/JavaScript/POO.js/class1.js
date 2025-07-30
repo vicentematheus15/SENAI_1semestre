@@ -42,9 +42,11 @@ class Pessoa{
 // // console.log(p2.nomeCompleto())
 // p2.comer("caldo")
 
+//usando getters e setters
 let p3 = new Pessoa("Carlos", "Martins")
 // console.log(p3.nome)
 
+//para ver as chaves, valores e chaves/valores
 // console.log(Object.keys(p3))
 // console.log(Object.values(p3))
 console.log(Object.entries(p3))
