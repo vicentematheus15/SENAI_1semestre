@@ -29,5 +29,8 @@ class Pessoa{
     set email(email){
         this._email = email
     }
+    imprimirDados(){
+        return `${this._nome} ${this._sobrenome}`
+    }
 }
 module.exports = Pessoa
