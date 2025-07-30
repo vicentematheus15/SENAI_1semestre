@@ -32,5 +32,14 @@ class Animal{
 }
 
 class Mamifero extends Animal{
-
+    constructor(reproducao, patas, locomocao, alimentacao, especie){
+        super(reproducao, patas, locomocao, alimentacao)
+        this._especie = especie
+    }
+    get especie(){
+        return this._especie
+    }
+    set especie(especie){
+        this._especie = especie
+    }
 }
