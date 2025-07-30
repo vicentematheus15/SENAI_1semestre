@@ -58,6 +58,8 @@ class Alunos extends Pessoas{
     }
 }
 
+let al1 = new Alunos("Nicodemos", "de Souza", "12345678910", "nds@gmail.com", 45987, "Banco de dados, 18")
+
 class Professores extends Pessoas{
     constructor(nome, sobrenome, CPF, email, area_de_formacao, salario){
         super(nome, sobrenome, CPF, email)
@@ -78,11 +80,14 @@ class Professores extends Pessoas{
     }
 
     recebeAumento(salario){
-        return salario + (salario * 0.1)
+        let novoSalario = salario + (salario * 0.1)
+        return console.log(novoSalario)
     }
-    calculaGanhoAnual(){
-        return (salario * 12)
+    calculaGanhoAnual(salario){
+        return salario * 12
     }
 }
 let prof1 = new Professores("Marcos", "Santos", "123.456.789-23", "marcos@gmail.com", "Desenvolvimento de Sistemas", 5000)
 console.table(prof1)
+prof1.recebeAumento(salario)
+prof1.
