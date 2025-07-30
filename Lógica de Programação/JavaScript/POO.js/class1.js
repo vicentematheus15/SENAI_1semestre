@@ -4,15 +4,26 @@
 // }
 
 class Pessoa{
+//atributos
     constructor(nome, sobrenome){
         this._nome = nome
         this._sobrenome = sobrenome
     }
-    //Getters and Setters
+//Getters and Setters
     get nome(){
         return this._nome
     }
+    set nome(nome){
+        this._nome = nome
+    }
+    get sobrenome(){
+        return this._sobrenome
+    }
+    set sobrenome(sobrenome){
+        this._sobrenome = sobrenome
+    }
 
+//métodos
     falar(msg){
         console.log(`${this.nome} está falando: ${msg}`)
     }
