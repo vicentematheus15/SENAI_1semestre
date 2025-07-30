@@ -43,3 +43,4 @@ class Mamifero extends Animal{
         this._especie = especie
     }
 }
+let m1 = new Mamifero("sexuada", 4, "caminha", "carnívoro", "cachorro")
