@@ -30,3 +30,7 @@ class Animal{
         this._alimentacao = alimentacao
     }
 }
+
+class Mamifero extends Animal{
+
+}
