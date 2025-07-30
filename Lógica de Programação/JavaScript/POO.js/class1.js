@@ -5,9 +5,14 @@
 
 class Pessoa{
     constructor(nome, sobrenome){
-        this.nome = nome
-        this.sobrenome = sobrenome
+        this._nome = nome
+        this._sobrenome = sobrenome
     }
+    //Getters and Setters
+    get nome(){
+        return this._nome
+    }
+
     falar(msg){
         console.log(`${this.nome} está falando: ${msg}`)
     }
