@@ -31,9 +31,12 @@ class Animal{
     }
 }
 
+//classe mamifero vai herdar a classe animal
 class Mamifero extends Animal{
     constructor(reproducao, patas, locomocao, alimentacao, especie){
+        //herdando esses atributos da classe pai
         super(reproducao, patas, locomocao, alimentacao)
+        //esse atributo é exclusivo da clase mamifero
         this._especie = especie
     }
     get especie(){
@@ -44,3 +47,6 @@ class Mamifero extends Animal{
     }
 }
 let m1 = new Mamifero("sexuada", 4, "caminha", "carnívoro", "cachorro")
+console.log(m1)
+let m2 = new Mamifero("sexuada", 4, "galopa", "herbívoro", "equino")
+console.table(m2)
