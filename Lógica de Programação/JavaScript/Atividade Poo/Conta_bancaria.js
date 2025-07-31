@@ -1,4 +1,4 @@
-class Conta{
+class Conta_bancaria{
     constructor(nome, sobrenome, CPF, tipo_conta, numero_conta, saldo){
         this._tipo_conta = tipo_conta
         this._numero_conta = numero_conta
