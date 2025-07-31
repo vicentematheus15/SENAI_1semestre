@@ -25,7 +25,4 @@ class Aluno extends Pessoa{
         this._idade = idade
     }
 }
-
-let al1 = new Aluno("Nicodemos", "de Souza", "12345678910", "nds@gmail.com", 45987, "Banco de dados, 18")
-
 module.exports = Aluno
