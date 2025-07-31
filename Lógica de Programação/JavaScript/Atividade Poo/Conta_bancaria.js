@@ -44,4 +44,4 @@ class Conta{
         this._saldo = saldo
     }
 }
-module.exports = Conta
+module.exports = Conta_bancaria

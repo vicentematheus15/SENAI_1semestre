@@ -1,7 +1,7 @@
-const Conta = require('./Conta')
-class Conta_corrente extends Conta{
-    constructor(tipo_conta, numero_conta, nome, sobrenome, CPF, tipo, saldo, ){
-        super(tipo_conta, numero_conta, nome, sobrenome, CPF, saldo, rendimento)
+const Conta = require('./Conta_bancaria')
+class Conta_corrente extends Conta_bancaria{
+    constructor(tipo_conta, numero_conta, nome, sobrenome, CPF, saldo, ){
+        super(tipo_conta, numero_conta, nome, sobrenome, CPF, saldo)
     }
 }
 module.exports = Conta_corrente
