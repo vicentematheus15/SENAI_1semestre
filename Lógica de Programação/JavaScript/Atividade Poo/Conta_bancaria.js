@@ -1,10 +1,10 @@
 class Conta_bancaria{
     constructor(nome, sobrenome, CPF, tipo_conta, numero_conta, saldo){
-        this._tipo_conta = tipo_conta
-        this._numero_conta = numero_conta
         this._nome = nome
         this._sobrenome = sobrenome
         this._CPF = CPF
+        this._tipo_conta = tipo_conta
+        this._numero_conta = numero_conta
         this._saldo = saldo
     }
     get nome(){
