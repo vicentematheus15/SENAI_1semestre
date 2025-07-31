@@ -10,6 +10,7 @@ class Funcionario extends Pessoa{
     set funcao(funcao){
         this._funcao = funcao
     }
+    //sobrescrita do metodo imprimirDados da classe Pai (Pessoa)
     get imprimirDados(){
         console.log(super.imprimirDados())
         return `Cargo: ${this.funcao.cargo}  Salário: ${this.funcao.salario}`
