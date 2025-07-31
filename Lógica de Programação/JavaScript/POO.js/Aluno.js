@@ -24,5 +24,8 @@ class Aluno extends Pessoa{
     set idade(idade){
         this._idade = idade
     }
+    static anoNascimento(id){
+        return 2025 - id
+    }
 }
 module.exports = Aluno

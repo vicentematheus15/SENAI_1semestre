@@ -11,3 +11,5 @@ let alu1 = new Aluno("Enzo", "Stallone", "65478954923", "enzo@gmail.com", 10235,
 console.log(func1.imprimirDados)
     //alu1 herda de Pessoa
 console.log(alu1.imprimirDados())
+    //método estático
+console.log(Aluno.anoNascimento(18))
