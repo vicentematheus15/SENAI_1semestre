@@ -7,7 +7,7 @@ class Funcao{
         return this._cargo
     }
     set cargo(cargo){
-        this._scargo= cargo
+        this._cargo = cargo
     }
     get salario(){
         return this._salario

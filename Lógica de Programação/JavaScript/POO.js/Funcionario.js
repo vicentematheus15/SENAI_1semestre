@@ -10,13 +10,9 @@ class Funcionario extends Pessoa{
     set funcao(funcao){
         this._funcao = funcao
     }
-
-    
-    // recebeAumento(percentual){
-    //     return this._salario * (1 + (percentual/100))
-    // }
-    // calculaGanhoAnual(salario){
-    //     return salario * 12
-    // }
+    get imprimirDados(){
+        console.log(super.imprimirDados())
+        return `Cargo: ${this.funcao.cargo}  Salário: ${this.funcao.salario}`
+    }
 }
 module.exports = Funcionario
