@@ -24,6 +24,7 @@ class Aluno extends Pessoa{
     set idade(idade){
         this._idade = idade
     }
+//método estático
     static anoNascimento(id){
         return 2025 - id
     }
