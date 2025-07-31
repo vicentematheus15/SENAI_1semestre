@@ -1,7 +1,7 @@
-const Conta = require('./Conta_bancaria')
+const Conta_bancaria = require('./Conta_bancaria')
 class Conta_poupanca extends Conta_bancaria{
-    constructor(tipo_conta, numero_conta, nome, sobrenome, CPF, saldo, rendimento ){
-        super(tipo_conta, numero_conta, nome, sobrenome, CPF, saldo)
+    constructor(nome, sobrenome, CPF, tipo_conta, numero_conta, saldo, rendimento){
+        super(nome, sobrenome, CPF, tipo_conta, numero_conta, saldo)
         this._rendimento = rendimento
     }
 }
