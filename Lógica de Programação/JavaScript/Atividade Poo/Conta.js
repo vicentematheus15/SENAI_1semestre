@@ -30,4 +30,4 @@ class Conta{
         this._CPF = CPF
     }
 }
-MediaSourceHandle.exports = Conta
+module.exports = Conta
