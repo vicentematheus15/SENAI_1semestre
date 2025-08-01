@@ -43,8 +43,5 @@ class Conta_bancaria{
     set saldo(saldo){
         this._saldo = saldo
     }
-    dadosPessoais(){  
-        return `${this._nome} ${this._sobrenome}\n${this._CPF}\n${this._tipo_conta}`
-    }
 }
 module.exports = Conta_bancaria

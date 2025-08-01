@@ -1,7 +1,7 @@
 const Conta_bancaria = require('./Conta_bancaria')
 class Linha_de_credito extends Conta_bancaria{
-    constructor(tipo_conta, nome, sobrenome, CPF, saldo, limite_credito){
-        super(tipo_conta, nome, sobrenome, CPF, saldo)
+    constructor(nome, sobrenome, CPF, tipo_conta, limite_credito, saldo){
+        super(nome, sobrenome, CPF, tipo_conta, limite_credito, saldo)
         this._limite_credito = limite_credito
     }
     get limite_credito(){
@@ -9,6 +9,9 @@ class Linha_de_credito extends Conta_bancaria{
     }
     set limite_credito(limite_credito){
         this._limite_credito = limite_credito
+    }
+    imprimirDados(){  
+        return `${this._nome} ${this._sobrenome}\n${this._CPF}\n${this._tipo_conta}\n${this._limite_credito}\n${this._saldo}`
     }
 }
 module.exports = Linha_de_credito
