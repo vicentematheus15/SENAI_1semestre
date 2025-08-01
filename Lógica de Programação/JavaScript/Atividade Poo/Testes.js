@@ -19,10 +19,13 @@ let cliente1 = new Conta_corrente("Caio", "Souza", "11111111111", "Corrente", "0
 
 //TESTES CONTA POUPANÇA
 let cliente2 = new Conta_poupanca("Carla", "Rodrigues", "22222222222", "Poupança", "00002", 1000, 5)
-// console.table(cliente2.imprimirDados())
-//rendimentoMensal
-console.log(cliente2.rendimentoMensal(cliente2.saldo, cliente2.porcentagem_rendimento))
+//rendimentoMensal()
+// console.log(cliente2.rendimentoMensal(cliente2.saldo, cliente2.porcentagem_rendimento))
 
 //TESTES LINHA DE CREDITO
-let cliente3 = new Linha_de_credito("Pedro", "Rocha", "33333333333", "Linha de crédito", 4000, 0)
+let cliente3 = new Linha_de_credito("Pedro", "Rocha", "33333333333", "Linha de crédito", 4000, 2500, 3000)
 // console.table(cliente3.imprimirDados())
+//restoLimite()
+// console.log(cliente3.restoLimite(cliente3.limite_credito, cliente3.valor_fatura))
+//pagarFatura()
+// console.log(cliente3.pagarFatura(cliente3.saldo, cliente3.valor_fatura))
