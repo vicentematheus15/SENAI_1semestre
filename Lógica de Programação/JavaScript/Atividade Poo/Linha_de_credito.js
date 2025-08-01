@@ -20,5 +20,14 @@ class Linha_de_credito extends Conta_bancaria{
     imprimirDados(){  
         return `${this._nome} ${this._sobrenome}\n${this._CPF}\n${this._tipo_conta}\n${this._limite_credito}\n${this.valor_fatura}\n${this._saldo}`
     }
+    restoLimite(limiteCredito, valorFatura){
+        if(valorFatura < limiteCredito){
+            let limiteRestante = limiteCredito - valorFatura
+            return `Você ainda tem R$${limiteRestante.toFixed(2)} de limite no crédito`
+        } else{
+            return `Você não tem mais limite disponível no crédito!`
+        }
+    }
+    
 }
 module.exports = Linha_de_credito
