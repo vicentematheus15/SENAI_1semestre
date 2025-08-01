@@ -15,7 +15,15 @@ class Conta_corrente extends Conta_bancaria{
             let novoSaldo = saldoAtual - valorSaque
             return `Saldo anterior: R$${saldoAtual.toFixed(2)}\nValor saque: R$${valorSaque.toFixed(2)}\nSaldo atual: R$${novoSaldo.toFixed(2)}`
         }else{
-            return `Saldo insuficiente!`
+            return `Saldo insuficiente para saque!`
+        }
+    }
+    enviaPix(saldoAtual, valorPix){
+        if(saldoAtual >= valorPix){
+            let novoSaldo = saldoAtual - valorPix
+            return `Saldo anterior: R$${saldoAtual.toFixed(2)}\nValor transferido via Pix: R$${valorPix.toFixed(2)}\nSaldo atual: R$${novoSaldo.toFixed(2)}`
+        }else{
+            return `Saldo insuficiente para transferência via Pix!`
         }
     }
 }
