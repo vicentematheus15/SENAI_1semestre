@@ -18,7 +18,7 @@ class Conta_corrente extends Conta_bancaria{
             return `Saldo insuficiente para saque!`
         }
     }
-    enviaPix(saldoAtual, valorPix){
+    enviarPix(saldoAtual, valorPix){
         if(saldoAtual >= valorPix){
             let novoSaldo = saldoAtual - valorPix
             return `Saldo anterior: R$${saldoAtual.toFixed(2)}\nValor transferido via Pix: R$${valorPix.toFixed(2)}\nSaldo atual: R$${novoSaldo.toFixed(2)}`
@@ -26,5 +26,6 @@ class Conta_corrente extends Conta_bancaria{
             return `Saldo insuficiente para transferência via Pix!`
         }
     }
+    receberPix
 }
 module.exports = Conta_corrente
