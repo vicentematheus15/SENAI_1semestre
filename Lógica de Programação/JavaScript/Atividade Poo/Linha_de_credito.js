@@ -28,6 +28,12 @@ class Linha_de_credito extends Conta_bancaria{
             return `Você não tem mais limite disponível no crédito!`
         }
     }
-    
+    pagarFatura(saldoAtual, valorFatura){
+        if(saldoAtual >= valorFatura){
+            return `Você tem saldo suficiente para pagar sua fatura!`
+        }else{
+            return `Você não tem saldo suficiente para pagar sua fatura!`
+        }
+    }
 }
 module.exports = Linha_de_credito
