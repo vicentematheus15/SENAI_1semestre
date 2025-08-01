@@ -24,7 +24,6 @@ let cliente2 = new Conta_poupanca("Carla", "Rodrigues", "22222222222", "Poupanç
 
 //TESTES LINHA DE CREDITO
 let cliente3 = new Linha_de_credito("Pedro", "Rocha", "33333333333", "Linha de crédito", 4000, 2500, 3000)
-// console.table(cliente3.imprimirDados())
 //restoLimite()
 // console.log(cliente3.restoLimite(cliente3.limite_credito, cliente3.valor_fatura))
 //pagarFatura()
