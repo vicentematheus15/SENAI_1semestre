@@ -12,3 +12,20 @@ let cod = []
 if(localStorage.codArr){
     cod = JSON.parse(localStorage.getItem('codArr'))
 }
+let preco = []
+if(localStorage.precoArr){
+    preco = JSON.parse(localStorage.getItem('precoArr'))
+}
+let descricao = []
+if(localStorage.descArr){
+    descricao = JSON.parse(localStorage.getItem('descArr'))
+}
+let qtd = []
+if(localStorage.qtdArr){
+    qtd = JSON.parse(localStorage.getItem('qtdArr'))
+}
+let totalCompra = []
+if(localStorage.totCompArr){
+    totalCompra = JSON.parse(localStorage.getItem('totCompArr'))
+}
+
