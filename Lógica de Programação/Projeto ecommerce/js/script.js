@@ -29,3 +29,23 @@ if(localStorage.totCompArr){
     totalCompra = JSON.parse(localStorage.getItem('totCompArr'))
 }
 
+function montaHTML(){
+//cria uma main ao carregr a pagina
+    main = document.createElement('main')
+    main.setAttribute('class', 'container')
+    document.body.append(main)
+//cria uma section ao carregr a pagina
+    section = document.createElement('section')
+    section.setAttribute('class','products-container')
+    document.main.append(section)
+
+//para cada indice da array de produtos, cria um: article, div
+    for(i in produto){
+        article = document.createElement('article')
+        article.setAttribute('class', 'card')
+        document.section.append(article)
+        div = document.createElement('div')
+        div.setAttribute = ('class', 'product-image')
+        div.setAttribute = ('id', 'img-' + i)
+    }
+}
