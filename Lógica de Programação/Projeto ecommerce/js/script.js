@@ -39,7 +39,7 @@ function montaHTML(){
     section.setAttribute('class','products-container')
     document.main.append(section)
 
-//para cada indice da array de produtos, cria um: article, div
+//para cada indice da array de produtos, cria varias tags html (article, div, p1, p2, span, h3, input, section, entre outros)
     for(i in produto){
         article = document.createElement('article')
         article.setAttribute('class', 'card')
@@ -77,7 +77,7 @@ function montaHTML(){
         // aLink = document.createElement('a')
         // aLink.setAttribute('onclick', 'compra(' + "'" + 'qtd-' + i + "'" + ',' + "'" + cod[i] + "'" + ',' + i + ")")
     }
-//cria o footer da pagina
+//cria um footer ao carregar a pagina
     footer = document.createElement('footer')
     footer.setAttribute('id', 'rodape')
     document.body.append(footer)
