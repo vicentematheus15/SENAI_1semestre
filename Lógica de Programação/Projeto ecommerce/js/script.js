@@ -43,9 +43,16 @@ function montaHTML(){
     for(i in produto){
         article = document.createElement('article')
         article.setAttribute('class', 'card')
-        document.section.append(article)
+        section.append(article)
         div = document.createElement('div')
-        div.setAttribute = ('class', 'product-image')
-        div.setAttribute = ('id', 'img-' + i)
+        div.setAttribute('class', 'product-image')
+        div.setAttribute('id', 'img-' + i)
+        div.setAttribute('onclick', 'abreLink(' + i + ')')
+        article.append(div)
+        document.getElementById('img-' + i).style.backgroundImage = 'url(imagens/img' + i + '.jpg)'
+        h3 = document.createElement('h3')
+        h3.setAttribute('id','nome' + i)
+        h3.innerHTML = produto[i]
+        article.append(h3)
     }
 }
