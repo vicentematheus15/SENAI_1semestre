@@ -254,4 +254,14 @@ function carregaProduto(){
     div2.setAttribute("class", "card");
     div2.setAttribute("id", "div-Prod");
     article.body.append(div2);
+    p1 = document.createElement('p')
+    p1.innerHTML = 'Qtd: '
+    div2.append(p1)
+    input = document.createElement("input");
+    input.setAttribute("type", "number");
+    input.setAttribute("value", "1");
+    input.setAttribute("min", "1");
+    input.setAttribute("max", "10");
+    input.setAttribute("hidden", "true");
+    input.setAttribute("id", "qtd-" + i);
 }
