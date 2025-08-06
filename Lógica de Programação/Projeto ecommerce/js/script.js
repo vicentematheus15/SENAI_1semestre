@@ -242,3 +242,16 @@ function calculaCesta() {
     alert("Você não está logado!");
   }
 }
+
+function carregaProduto(){
+    let produtoCompra = localStorage.getItem('produtoIndividual')
+    let descCompra = localStorage.getItem('descricaoIndividual')
+    let pos = produto.indexOf(produtoCompra)
+    document.getElementById("tituloProduto").innerHTML = produtoCompra
+    document.getElementById("descProduto").innerHTML = descCompra
+    document.getElementById("imgProd"),style.backgroundImage = 'url(imagens/img' + pos +'.jpg)'
+    div2 = document.createElement("div");
+    div2.setAttribute("class", "card");
+    div2.setAttribute("id", "div-Prod");
+    article.body.append(div2);
+}
