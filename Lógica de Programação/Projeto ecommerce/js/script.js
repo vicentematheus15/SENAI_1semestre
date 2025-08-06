@@ -64,17 +64,21 @@ function montaHTML() {
     article = document.createElement("article");
     article.setAttribute("class", "card");
     section.append(article);
+   
     div = document.createElement("div");
     div.setAttribute("class", "product-image");
     div.setAttribute("id", "img-" + i);
     div.setAttribute("onclick", "abreLink(" + i + ")");
     article.append(div);
+    
     document.getElementById("img-" + i).style.backgroundImage =
       "url(imagens/img" + i + ".jpg)";
+    
     h3 = document.createElement("h3");
     h3.setAttribute("id", "nome" + i);
     h3.innerHTML = produto[i];
     article.append(h3);
+    
     p1 = document.createElement("p");
     p1.innerHTML = "Qtd: ";
     p1.setAttribute("hidden", "true");
@@ -87,6 +91,7 @@ function montaHTML() {
     input.setAttribute("id", "qtd-" + i);
     p1.append(input);
     article.append(p1);
+    
     p2 = document.createElement("p");
     p2.innerHTML = "R$ ";
     span = document.createElement("span");
@@ -95,6 +100,7 @@ function montaHTML() {
     span.innerHTML = preco[i].toFixed(2).replace(".", ",");
     p2.append(span);
     article.append(p2);
+    
     // aLink = document.createElement('a')
     // aLink.setAttribute('onclick', 'compra(' + "'" + 'qtd-' + i + "'" + ',' + "'" + cod[i] + "'" + ',' + i + ")")
   }
@@ -102,12 +108,15 @@ function montaHTML() {
   footer = document.createElement("footer");
   footer.setAttribute("id", "rodape");
   document.body.append(footer);
+  
   h2 = document.createElement("h2");
   h2.innerHtml = "Informações sobre o site";
   footer.append(h2);
+  
   p3 = document.createElement("p");
   p3.innerHTML = "&copy; 2025";
   footer.append(p3);
+  
   span2 = document.createElement("span");
   span2.setAttribute("class", "bold");
   span2.innerHTML = "Loja dos Nerds";
@@ -117,6 +126,7 @@ function montaHTML() {
   aLink2.innerHTML = "Administração";
   footer.append(aLink2);
   p3.append(span2);
+  
   let logA = localStorage.getItem("loginAutenticado");
   if (logA == "null" || logA == "undefined") {
     document.getElementById("log").innerHTML = "login";
@@ -250,13 +260,16 @@ function carregaProduto(){
     document.getElementById("tituloProduto").innerHTML = produtoCompra
     document.getElementById("descProduto").innerHTML = descCompra
     document.getElementById("imgProd"),style.backgroundImage = 'url(imagens/img' + pos +'.jpg)'
+    
     div2 = document.createElement("div");
     div2.setAttribute("class", "card");
     div2.setAttribute("id", "div-Prod");
     article.body.append(div2);
+    
     p1 = document.createElement('p')
     p1.innerHTML = 'Qtd: '
     div2.append(p1)
+    
     input = document.createElement("input");
     input.setAttribute("type", "number");
     input.setAttribute("value", "1");
@@ -264,4 +277,28 @@ function carregaProduto(){
     input.setAttribute("max", "10");
     input.setAttribute("hidden", "true");
     input.setAttribute("id", "qtd-" + i);
+    p1.append(input)
+    
+    p2 = document.createElement("p");
+    p2.innerHTML = "R$ ";
+    span = document.createElement("span");
+    span.setAttribute("id", cod[pos]);
+    span.setAttribute("class", "bold");
+    span.innerHTML = preco[pos].toFixed(2).replace(".", ",");
+    p2.append(span);
+    div2.append(p2);
+    
+    aLink = document.createElement('a')
+    aLink.setAttribute('onclick', 'compra(' + "'" + 'qtd-' + pos + "'" + ',' + "'" + cod[pos] + "'" + ',' + pos + ")")
+    aLink.setAttribute('class', 'btn')
+    aLink.setAttribute('href', '#')
+    aLink.innerHTML = "Comprar"
+    div2.append(aLink)
+    
+    let logB = localStorage.getItem('loginAutenticado')
+    if(logB == 'null'|| logB == 'undefined'){
+        document.getElementById('log').innerHTML = 'login'
+    }else{
+        document.getElementById('log').innerHTML = `Bem-vindo, ${localStorage.getItem('loginAutenticado')}`
+    }
 }
