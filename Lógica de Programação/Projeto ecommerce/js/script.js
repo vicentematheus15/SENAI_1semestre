@@ -125,6 +125,27 @@ function montaHTML(){
     }
 }
 
+function abreTelaLogin(){
+    if(localStorage.usrArr){
+        usr = JSON.parse(localStorage.getItem('usrArr'))
+    }
+    if(localStorage.snhArr){
+        snh = JSON.parse(localStorage.getItem('snhArr'))
+    }
+
+    login = prompt("Digite seu nome de usuário:")
+    senha = prompt("Digite sua senha:")
+
+    let indUsr = usr.indexOf(login)
+    if(usr[indUsr] == login && snh[indUsr] == senha){
+        localStorage.setItem('loginAutenticado', login)
+        loginAut = localStorage.getItem('loginAutenticado')
+        document.getElementById('log').innerHTML = `Bem-vindo, ${loginAut}!`
+    } else{
+        document.getElementById('log').innerHTML = 'Login'
+        alert(`Digite um usuário/senha válidos\nou crie um novo login no link ao lado.`)
+    }
+}
 
 
 
