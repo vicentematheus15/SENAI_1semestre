@@ -102,4 +102,31 @@ function montaHTML(){
     }else{
         document.getElementById('log').innerHTML = `Bem-vindo, ${localStorage.getItem('loginAutenticado')}`
     }
+    function criaLogin(){
+    if(localStorage.usrArr){
+        usr = JSON.parse(localStorage.getItem('usrArr'))
+    }
+    if(localStorage.snhArr){
+        snh = JSON.parse(localStorage.getItem('snhArr'))
+    }
+
+    let novoUsr = prompt("Digite o nome de usuário:")
+    usr.push(novoUsr)
+    localStorage.usrArr = JSON.stringify(usr)
+
+    let novaSnh = prompt("Digite uma senha:")
+    snh.push(novaSnh)
+    localStorage.snhArr = JSON.stringify(snh)
+
+    if(usr.includes(novoUsr) && snh.includes(novaSnh)){
+        alert("Login criado com sucesso")
+    } else{
+        alert("Login não foi possível criar seu login. Erro desconhecido.")
+    }
+}
+
+
+
+
+
 }
