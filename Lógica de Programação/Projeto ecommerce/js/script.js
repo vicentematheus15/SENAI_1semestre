@@ -122,6 +122,7 @@ function montaHTML(){
         alert("Login criado com sucesso")
     } else{
         alert("Login não foi possível criar seu login. Erro desconhecido.")
+        }
     }
 }
 
