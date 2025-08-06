@@ -147,7 +147,23 @@ function abreTelaLogin(){
     }
 }
 
-
+function compra(qtdId, produt, posArr){
+    if(localStorage.posArr){
+        qtd[posArr] = parseInt(document.getElementById(qtdId).value)
+    } else{
+        localStorage.posArr = JSON.stringify(qtd)
+    }
+    totalCompra[posArr] = qtd[posArr] * parseFloat(document.getElementById(produt).innerText.replace(',', '.'))
+    localStorage.qtdArr = JSON.stringify(qtd)
+    localStorage.totCompArr = JSON.stringify(totalCompra)
+    localStorage.setItem('produtoIndividual', produto[posArr])
+    localStorage.setItem('descricaoIndividual', descricao[posArr])
+    let url_atual = window.location.href 
+    if(url_atual != "http://127.0.0.1:5500/produto.html" && url_atual != "http://127.0.0.1:5500/produto.html#"){
+        window.location.href = "/produto.html"
+    }
+    alert("Produto adicionado ao carrinho!")
+}
 
 
 }
