@@ -165,5 +165,22 @@ function compra(qtdId, produt, posArr){
     alert("Produto adicionado ao carrinho!")
 }
 
-
+function calculaCesta(){
+    usr = JSON.parse(localStorage.getItem('usrARR'))
+    loginAut = localStorage.getItem('loginAutenticado')
+    if(usr.includes(loginAut)){
+        let textoCarrinho = ''
+        for(i in qtd){
+            if(qtd[i] > 0){
+                totalGeral += totalCompra[i]
+                textoCarrinho += qtd[i] + " x " + preco[i].toFixed(2).replace('.', ',') + " - Boneco " + produto[i] + " R$ " + totalCompra[i].toFixed(2).replace('.', ',') + "\n"
+            }
+        }
+        if(totalGeral > 0){
+            alert(`${textoCarrinho} 
+                =================================
+                Total da compra       R$ ${totalGeral.toFixed(2).replace('.', ',')}
+                `)
+        }
+    }
 }
