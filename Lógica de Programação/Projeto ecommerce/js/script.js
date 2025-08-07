@@ -100,10 +100,8 @@ function montaHTML() {
     span.innerHTML = preco[i].toFixed(2).replace(".", ",");
     p2.append(span);
     article.append(p2);
-    
-    // aLink = document.createElement('a')
-    // aLink.setAttribute('onclick', 'compra(' + "'" + 'qtd-' + i + "'" + ',' + "'" + cod[i] + "'" + ',' + i + ")")
   }
+  
   //cria um footer ao carregar a pagina
   footer = document.createElement("footer");
   footer.setAttribute("id", "rodape");
@@ -135,6 +133,8 @@ function montaHTML() {
       "log"
     ).innerHTML = `Bem-vindo, ${localStorage.getItem("loginAutenticado")}`;
   }
+}
+
   function criaLogin() {
     if (localStorage.usrArr) {
       usr = JSON.parse(localStorage.getItem("usrArr"));
@@ -157,7 +157,7 @@ function montaHTML() {
       alert("Login não foi possível criar seu login. Erro desconhecido.");
     }
   }
-}
+
 
 function abreTelaLogin() {
   if (localStorage.usrArr) {
