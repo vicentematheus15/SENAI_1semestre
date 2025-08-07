@@ -101,6 +101,10 @@ function getDados(){
     document.getElementById('linkAmazon').value = ''
     alert("Dados inseridos com Sucesso!")
 }
+function abreLink(i){
+  console.log("ok")
+  carregaProduto(i)
+}
 
 function montaHTML() {
   //cria uma main ao carregr a pagina
@@ -121,6 +125,7 @@ function montaHTML() {
     div = document.createElement("div");
     div.setAttribute("class", "product-image");
     div.setAttribute("id", "img-" + i);
+    div.setAttribute("href", "produto.html");
     div.setAttribute("onclick", "abreLink(" + i + ")");
     article.append(div);
     
