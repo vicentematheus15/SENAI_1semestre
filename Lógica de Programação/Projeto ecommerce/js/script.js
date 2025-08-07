@@ -101,11 +101,17 @@ function getDados(){
     document.getElementById('linkAmazon').value = ''
     alert("Dados inseridos com Sucesso!")
 }
-function abreLink(i){
-  console.log("ok")
-  carregaProduto(i)
+function abreLink(posArr){
+  localStorage.setItem('produtoIndividual', produto[posArr])
+  localStorage.setItem('descricaoIndividual', descricao[posArr])
+  let url_atual = window.location.href;
+  if (
+    url_atual != "http://127.0.0.1:5500/produto.html" &&
+    url_atual != "http://127.0.0.1:5500/produto.html#"
+  ) {
+    window.location.href = "./produto.html";
+  }
 }
-
 function montaHTML() {
   //cria uma main ao carregr a pagina
   main = document.createElement("main");
@@ -125,7 +131,7 @@ function montaHTML() {
     div = document.createElement("div");
     div.setAttribute("class", "product-image");
     div.setAttribute("id", "img-" + i);
-    div.setAttribute("href", "produto.html");
+    // div.setAttribute("href", "produto.html");
     div.setAttribute("onclick", "abreLink(" + i + ")");
     article.append(div);
     
@@ -259,7 +265,7 @@ function compra(qtdId, produt, posArr) {
     url_atual != "http://127.0.0.1:5500/produto.html" &&
     url_atual != "http://127.0.0.1:5500/produto.html#"
   ) {
-    window.location.href = "/produto.html";
+    window.location.href = "./produto.html";
   }
   alert("Produto adicionado ao carrinho!");
 }
