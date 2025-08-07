@@ -323,12 +323,12 @@ function carregaProduto(){
     let pos = produto.indexOf(produtoCompra)
     document.getElementById("tituloProduto").innerHTML = produtoCompra
     document.getElementById("descProduto").innerHTML = descCompra
-    document.getElementById("imgProd"),style.backgroundImage = 'url(imagens/img' + pos +'.jpg)'
+    document.getElementById("imgProd").style.backgroundImage = 'url(./imagens/img' + pos +'.jpg)'
     
     div2 = document.createElement("div");
     div2.setAttribute("class", "card");
     div2.setAttribute("id", "div-Prod");
-    article.body.append(div2);
+    document.body.append(div2);
     
     p1 = document.createElement('p')
     p1.innerHTML = 'Qtd: '
