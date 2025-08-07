@@ -49,6 +49,59 @@ if (localStorage.totCompArr) {
   totalCompra = JSON.parse(localStorage.getItem("totCompArr"));
 }
 
+function getDados(){
+    if(localStorage.qtdArr){
+        qtd = JSON.parse(localStorage.getItem('qtdArr'))
+    }
+    //qtd.push(0)
+    localStorage.qtdArr = JSON.stringify(qtd)
+    if(localStorage.totCompArr){
+        totalCompra = JSON.parse(localStorage.getItem('totCompArr'))
+    }
+    //totalCompra.push(0)
+    localStorage.totCompArr = JSON.stringify(totalCompra)
+    if(localStorage.prodArr){
+        produto = JSON.parse(localStorage.getItem('prodArr'))
+    }
+    let prod = document.getElementById('produto').value
+    produto.push(prod)
+    localStorage.prodArr = JSON.stringify(produto)
+    document.getElementById('produto').value = ''
+
+    if(localStorage.descArr){
+        descricao = JSON.parse(localStorage.getItem('descArr'))
+    }
+    let descri = document.getElementById('descricao').value
+    descricao.push(descri)
+    localStorage.descArr = JSON.stringify(descricao)
+    document.getElementById('descricao').value = ''
+
+    if(localStorage.codArr){
+        cod = JSON.parse(localStorage.getItem('codArr'))
+    }
+    let codig = document.getElementById('codigo').value
+    cod.push(codig)
+    localStorage.codArr = JSON.stringify(cod)
+    document.getElementById('codigo').value = ''
+    if(localStorage.precoArr){
+        preco = JSON.parse(localStorage.getItem('precoArr'))
+    }
+    let prec = document.getElementById('preco').value
+    preco.push(parseFloat(prec.replace(',' , '.')))
+    localStorage.precoArr = JSON.stringify(preco)
+    document.getElementById('preco').value = ''
+
+
+    if(localStorage.linkArr){
+        link = JSON.parse(localStorage.getItem('linkArr'))
+    }
+    let lnk = document.getElementById('linkAmazon').value
+    link.push(lnk)
+    localStorage.linkArr = JSON.stringify(link)
+    document.getElementById('linkAmazon').value = ''
+    alert("Dados inseridos com Sucesso!")
+}
+
 function montaHTML() {
   //cria uma main ao carregr a pagina
   main = document.createElement("main");
@@ -101,7 +154,7 @@ function montaHTML() {
     p2.append(span);
     article.append(p2);
   }
-  
+
   //cria um footer ao carregar a pagina
   footer = document.createElement("footer");
   footer.setAttribute("id", "rodape");
