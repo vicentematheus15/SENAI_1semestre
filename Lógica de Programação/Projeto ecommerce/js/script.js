@@ -340,7 +340,7 @@ function carregaProduto(){
     input.setAttribute("min", "1");
     input.setAttribute("max", "10");
     input.setAttribute("hidden", "true");
-    input.setAttribute("id", "qtd-" + i);
+    input.setAttribute("id", "qtd-" + pos);
     p1.append(input)
     
     p2 = document.createElement("p");
