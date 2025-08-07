@@ -110,16 +110,16 @@ function montaHTML() {
   document.body.append(footer);
   
   h2 = document.createElement("h2");
-  h2.innerHtml = "Informações sobre o site";
+  h2.innerHTML = "Informações sobre o site";
   footer.append(h2);
   
   p3 = document.createElement("p");
-  p3.innerHTML = "&copy; 2025";
+  p3.innerHTML = "&copy; 2025 ";
   footer.append(p3);
   
   span2 = document.createElement("span");
   span2.setAttribute("class", "bold");
-  span2.innerHTML = "Loja dos Nerds";
+  span2.innerHTML = " Loja dos Nerds";
   aLink2 = document.createElement("a");
   aLink2.setAttribute("id", "adm");
   aLink2.setAttribute("href", "atualizacao.html");
