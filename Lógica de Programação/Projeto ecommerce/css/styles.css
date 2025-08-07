@@ -148,8 +148,12 @@ h3{
     border: 5px solid #070347;
     border-radius: 20px;
 }
+.tituloProduto{
+    padding-top: 120px;
+}
 #central{
     display: flex;
+    padding-top: 10px;
 }
 #descProduto{
     width: 1000px;
