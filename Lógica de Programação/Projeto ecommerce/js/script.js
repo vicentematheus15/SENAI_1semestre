@@ -57,7 +57,7 @@ function montaHTML() {
   //cria uma section ao carregr a pagina
   section = document.createElement("section");
   section.setAttribute("class", "products-container");
-  document.main.append(section);
+  main.append(section);
 
   //para cada indice da array de produtos, cria varias tags html (article, div, p1, p2, span, h3, input, section, entre outros)
   for (i in produto) {
