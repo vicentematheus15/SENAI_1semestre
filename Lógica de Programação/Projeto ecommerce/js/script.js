@@ -272,13 +272,10 @@ function compra(qtdId, produt, posArr) {
 function calculaCesta() {
   usr = JSON.parse(localStorage.getItem("usrArr"));
   loginAut = localStorage.getItem("loginAutenticado");
-  console.log("1")
   if (usr.includes(loginAut)) {
     let textoCarrinho = "";
-    console.log("2")
     for (i in qtd) {
       if (qtd[i] > 0) {
-        console.log("3")
         totalGeral += totalCompra[i];
         textoCarrinho +=
           qtd[i] +
