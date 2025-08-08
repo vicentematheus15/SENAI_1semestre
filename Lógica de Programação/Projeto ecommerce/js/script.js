@@ -291,7 +291,7 @@ function calculaCesta() {
     if (totalGeral > 0) {
       alert(`${textoCarrinho} 
                 =================================
-                
+
                 Total da compra       R$ ${totalGeral
                   .toFixed(2)
                   .replace(".", ",")}
@@ -339,7 +339,6 @@ function carregaProduto(){
     input.setAttribute("value", "1");
     input.setAttribute("min", "1");
     input.setAttribute("max", "10");
-    // input.setAttribute("hidden", "true");
     input.setAttribute("id", "qtd-" + pos);
     p1.append(input)
     
