@@ -131,12 +131,11 @@ function montaHTML() {
     div = document.createElement("div");
     div.setAttribute("class", "product-image");
     div.setAttribute("id", "img-" + i);
-    // div.setAttribute("href", "produto.html");
     div.setAttribute("onclick", "abreLink(" + i + ")");
     article.append(div);
     
     document.getElementById("img-" + i).style.backgroundImage =
-      "url(imagens/img" + i + ".jpg)";
+      "url(./imagens/img" + i + ".jpg)";
     
     h3 = document.createElement("h3");
     h3.setAttribute("id", "nome" + i);
@@ -339,7 +338,7 @@ function carregaProduto(){
     input.setAttribute("value", "1");
     input.setAttribute("min", "1");
     input.setAttribute("max", "10");
-    input.setAttribute("hidden", "true");
+    // input.setAttribute("hidden", "true");
     input.setAttribute("id", "qtd-" + pos);
     p1.append(input)
     
