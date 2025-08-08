@@ -247,7 +247,6 @@ function abreTelaLogin() {
 }
 
 function compra(qtdId, produt, posArr) {
-  console.log("ok")
   if (localStorage.posArr) {
     qtd[posArr] = parseInt(document.getElementById(qtdId).value);
   } else {
