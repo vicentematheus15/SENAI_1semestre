@@ -291,6 +291,7 @@ function calculaCesta() {
     if (totalGeral > 0) {
       alert(`${textoCarrinho} 
                 =================================
+                
                 Total da compra       R$ ${totalGeral
                   .toFixed(2)
                   .replace(".", ",")}
