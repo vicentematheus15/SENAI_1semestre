@@ -1,5 +1,9 @@
+#tituloProduto{
+    padding-top: 120px;
+}
 #central{
     display: flex;
+    padding-top: 10px;
 }
 #imgProd{
     width: 270px;
@@ -13,4 +17,10 @@
 #descProduto{
     width: 1000px;
     border: 5px solid;
+    border-radius: 30px;
+    padding: 10px;
+    margin-left: 10px;
+    overflow: auto;
+    font-size: 22px;
+    height: 400px;
 }
