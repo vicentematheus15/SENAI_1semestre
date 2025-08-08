@@ -270,7 +270,7 @@ function compra(qtdId, produt, posArr) {
 }
 
 function calculaCesta() {
-  usr = JSON.parse(localStorage.getItem("usrARR"));
+  usr = JSON.parse(localStorage.getItem("usrArr"));
   loginAut = localStorage.getItem("loginAutenticado");
   console.log("1")
   if (usr.includes(loginAut)) {
