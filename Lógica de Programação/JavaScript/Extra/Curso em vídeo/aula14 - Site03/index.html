@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+    <section>
+        <div id="dados">
+            <label class="rotulos" for="numInicial">Início: <input type="number" class="inputs" id="numInicial" placeholder="Número inicial"></label>
+
+            <label class="rotulos" for="numFinal">Fim: <input type="number" class="inputs" id="numFinal" placeholder="Número final"></label>
+            
+            <label class="rotulos" for="passo">Passo: <input type="number" class="inputs" id="passo" placeholder="Passo da contagem"></label>
+               
+                <div class="buttons">
+                    <p><input type="button" id="button1" value="Contar" onclick="contar()"></p>   
+                    <p><input type="button" id="button2" value="Redefinir" onclick="apagar()"></p>
+                </div>
+            </div>
+
+        <div id="resultado">
+            <h4>Preparando a contagem...</h4>
+        </div>
+    </section>
+    <footer>
+        <p>Vicente</p>
+    </footer>
+</body>
+</html>
