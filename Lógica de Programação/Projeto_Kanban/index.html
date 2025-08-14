@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gerenciador de Tarefas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="container">
+    
+    <!-- Cabeçalho -->
+    <header>
+      <h2 class="titulo">Sistema de gerenciamento de tarefas "Kanban"</h2>
+      <button><h4 class="buttonNovaTarefa" onclick="adicionarTarefa()">Crie uma atividade clicando aqui</h4></button>
+    </header>
+
+    <!-- Coluna: Para fazer -->
+    <div class="coluna Fazer">
+      <h4 class="tituloColuna">Para fazer</h4>
+      <div id="tarefaParaFazer" class="espacoTarefas"></div>
+    </div>
+
+    <!-- Coluna: Em andamento -->
+    <div class="coluna EmAndamento">
+      <h4 class="tituloColuna">Em andamento</h4>
+      <div id="tarefaEmAndamento" class="espacoTarefas"></div>
+    </div>
+
+    <!-- Coluna: Feito -->
+    <div class="coluna Feito">
+      <h4 class="tituloColuna">Feito</h4>
+      <div id="tarefaFeito" class="espacoTarefas"></div>
+    </div>
+
+  </main>
+
+  <!-- Espaço para formulário ou adicionar tarefas futuramente -->
+  <main id="adicionar"></main>
+
+  <script src="script.js"></script>
+</body>
+</html>
